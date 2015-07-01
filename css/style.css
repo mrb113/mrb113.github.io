@@ -321,6 +321,15 @@
 				.icon.circle.fa-gamepad:hover {
 					background: #76b900;
 				}
+				
+			.icon.circle.fa-linkedin {
+			background: #007bb6;
+			color: white;
+			}
+
+				.icon.circle.fa-linkedin:hover {
+					background: #007bb6;
+				}
 
 			.icon.circle.fa-wordpress {
 				background: #7490c3;
