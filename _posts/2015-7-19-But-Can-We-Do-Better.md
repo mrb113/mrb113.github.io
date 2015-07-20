@@ -20,7 +20,6 @@ This article uses C for the examples since that's what's easiest for me to write
 
 **Problem:** Write a simple algorithm that inserts a number into a table using a hash that takes a seed, such that inserting `x` into a table with seed 0 would look like: 
 ```
-`
 slot = Hash(x, 0);
 table[slot] = x % tablesize - 1; 
 ``` 
@@ -28,7 +27,7 @@ table[slot] = x % tablesize - 1;
 
 Got it? Simple hashing.
 
-If `table[slot]` is already full, we try `Hash(x, 1)`, `Hash(x, 2)` until we have our slot. For the purposes of our problem, `Hash(x, seed)` is a good hash function that generates few collisions and will give a valid slot for some seed (that is, there won't be an infinite loop or stack overflow while we're looking for our hash slot. The function is good, people. Moving on). I'm also including int TimeConsumingOperation() which represents a time consuming operation that can fail - fairly standard thing that shows up often in real life. 
+If `table[slot]` is already full, we try `Hash(x, 1)`, `Hash(x, 2)` until we have our slot. For the purposes of our problem, `Hash(x, seed)` is a good hash function that generates few collisions and will give a valid slot for some seed (that is, there won't be an infinite loop or stack overflow while we're looking for our hash slot. The function is good, people. Moving on). I'm also including `bool TimeConsumingOperation()` which represents a, well, time consuming operation that can fail - fairly standard thing that shows up often in real life. 
 
 *p.s. This is a simplification of one of my favorite problems: Perfect Hashing. That's for another post, though. If you're interested in my performant perfect hashing program that this example is based on, but you can see it [here](https://github.com/mrb113/PerfectHash).* 
 
@@ -83,7 +82,7 @@ Duplicated code is one of those things that you hope your compiler will look kin
 
 ```
 /* Inserts a value into the table array */
-bool InsertIntoTableUnoptimized(int* table, int tablesize, int value) {
+bool InsertIntoTableBetter(int* table, int tablesize, int value) {
 	int slot; 
 	int seed; 
 	bool slotFound; 
@@ -154,7 +153,7 @@ We've gone for the low hanging fruit already and our program looks pretty decent
 **...but can we do better?**
 
 ###Watch Your Loops
-I'm not sure if this practice has a name, but we have to think really hard about whether our loops can get out of hand. In our case, we already have the guarantee that our Hash(value, seed) will eventually give us a value... but what if it takes 1000 iterations for a certain value to find a seed that works? What if that keeps happening for all zillion values that we're inserting? We can't afford that on Jimbo's Dinosaur Machine. Jimbo's gonna toss that machine right out the window and sue us for the cost of the new one... or something. 
+I'm not sure if this practice has a name, but we have to think really hard about whether our loops can get out of hand. In our case, we already have the guarantee that our `Hash(value, seed)` will eventually give us a value... but what if it takes 1000 iterations for a certain value to find a seed that works? What if that keeps happening for all zillion values that we're inserting? We can't afford that on Jimbo's Dinosaur Machine. Jimbo's gonna toss that machine right out the window and sue us for the cost of the new one... or something. 
 
 What we really want is a version of fast fail for our loop.
 
@@ -166,7 +165,7 @@ What we really want is a version of fast fail for our loop.
 while (!slotFound && seed < MAX_TRIES) {
 	slot = Hash(value, seed) % tableSize - 1; 
 
-	if (table[i] == -1) {
+	if (table[i] == 0) {
 		// Slot is occupied - try again.
 		seed++; 
 		break; 
@@ -207,8 +206,9 @@ Now, if you'll excuse me, I'll pull the "verification is left to the curious rea
 Welcome to the bonus round! Here we'll talk about things that are a little more intense than your garden variety optimization that we did above and aren't necessary for most cases, but I encourage you to at least consider them to get into the spirit of optimization the next time you're coding. The point is that it could be worth it to experiment with your program and take advantage of facts that the compiler couldn't possibly know.
 
 Remember that magic `Hash(x, seed)` function that we have? Well, let's say that we've determined that `Hash(x, 0)` works 65% of the time and that we don't have to try any more seeds after 0. If we are really really gung ho about minimizing cycles, we can take advantage of this fact and force the compiler to optimize for the path where `seed = 0`. 
+
 ```
-Pseudocode: 
+// Pseudocode: 
 Hash(x, seed) {
 	// Hash algorithm goes here
 	// Seed gets added, subtracted, multiplied, shifted, whatever.
@@ -238,4 +238,4 @@ I'm not going to do any code for this portion, but think about it: If memory usa
 
 **...but can we do better?**
 
- You tell me! Drop me an email at michelle@mrbit.me. 
+ You tell me! Drop me an email at [michelle@mrbit.me](mailto:michelle@mrbit.me). 
