@@ -19,3 +19,60 @@ This article uses C for the examples since that's what's easiest for me to write
 *__Time for a game of "Can We Do Better"!__*
 
 **Problem:** Write a simple algorithm that inserts a number into a table using a hash that takes a seed, such that inserting `x` into a table with seed 0 would look like: 
+```
+`
+slot = Hash(x, 0);
+table[slot] = x % tablesize - 1; 
+``` 
+######(We subtract 1 because the table is zero indexed. Naughty off-by-one errors are not welcome here).  
+
+Got it? Simple hashing.
+
+If `table[slot]` is already full, we try `Hash(x, 1)`, `Hash(x, 2)` until we have our slot. For the purposes of our problem, `Hash(x, seed)` is a good hash function that generates few collisions and will give a valid slot for some seed (that is, there won't be an infinite loop or stack overflow while we're looking for our hash slot. The function is good, people. Moving on). I'm also including int TimeConsumingOperation() which represents a time consuming operation that can fail - fairly standard thing that shows up often in real life. 
+
+*p.s. This is a simplification of one of my favorite problems: Perfect Hashing. That's for another post, though. If you're interested in my performant perfect hashing program that this example is based on, but you can see it [here](https://github.com/mrb113/PerfectHash).* 
+
+So, we have our unoptimized version that we banged together: (yes, I am hypothetically using stdbool.h. If you don't use C, you may not know that C does not come built in with boolean true/false values! So we have to add them in ourselves)
+
+```
+/* Inserts a value into the table array */ 
+bool InsertIntoTableUnoptimized(int* table, int tablesize, int value) {
+	int slot; 
+	bool slotFound; 
+
+	printf("Doing some time-consuming operations on the table"); 
+	if (!TimeConsumingOperation()) {
+		printf("Insertion into table failed!\n"); 
+		return false; 
+	}	 
+	if(TableIsFull) {
+		printf("Insertion into table failed!\n"); 
+		return false; 
+	}
+	
+	printf("Inserting %d into the table.\n", value); 
+	// Insert into the table using the hash
+	// Remember to declare any variables you need outside of the while loop!
+	// "Nice loop you have there... shame if we had to alloacate an int or two
+	// every time we went through it... "
+
+	int seed = 0; 
+	slotFound = false; 
+	while (!slotFound) {
+		slot = Hash(value, seed) % tablesize  - 1; 
+		if (table[slot] == 0) {
+			// Slot is occupied - try again.
+			seed++; 
+			break; 
+		} else {
+			// Slot is available - insert
+			table[slot] = value; 
+			slotFound = true; 
+			return true; 
+		} 
+	}	
+}
+```
+It answers our question and incorporates some good programming practices. You may have noticed some iffy things unfolding, but hey, it works!
+
+**...but can we do better?**
