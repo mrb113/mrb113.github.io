@@ -21,9 +21,9 @@ This article uses C for the examples since that's what's easiest for me to write
 **Problem:** Write a simple algorithm that inserts a number into a table using a hash that takes a seed, such that inserting `x` into a table with seed 0 would look like: 
 ```
 slot = Hash(x, 0);
-table[slot] = x % tablesize - 1; 
+table[slot] = x % tableSize - 1; 
 ``` 
-######(We subtract 1 because the table is zero indexed. Naughty off-by-one errors are not welcome here).  
+*(We subtract 1 because the table is zero indexed. Naughty off-by-one errors are not welcome here).*
 
 Got it? Simple hashing.
 
@@ -35,7 +35,7 @@ So, we have our unoptimized version that we banged together: (yes, I am hypothet
 
 ```
 /* Inserts a value into the table array */ 
-bool InsertIntoTableUnoptimized(int* table, int tablesize, int value) {
+bool InsertIntoTableUnoptimized(int* table, int tableSize, int value) {
 	int slot; 
 	bool slotFound; 
 
@@ -58,7 +58,7 @@ bool InsertIntoTableUnoptimized(int* table, int tablesize, int value) {
 	int seed = 0; 
 	slotFound = false; 
 	while (!slotFound) {
-		slot = Hash(value, seed) % tablesize  - 1; 
+		slot = Hash(value, seed) % tableSize  - 1; 
 		if (table[slot] == 0) {
 			// Slot is occupied - try again.
 			seed++; 
@@ -82,7 +82,7 @@ Duplicated code is one of those things that you hope your compiler will look kin
 
 ```
 /* Inserts a value into the table array */
-bool InsertIntoTableBetter(int* table, int tablesize, int value) {
+bool InsertIntoTableBetter(int* table, int tableSize, int value) {
 	int slot; 
 	int seed; 
 	bool slotFound; 
@@ -106,7 +106,7 @@ bool InsertIntoTableBetter(int* table, int tablesize, int value) {
 	seed = 0; 
 	slotFound = false; 
 	while (!slotFound) {
-		slot = Hash(value, seed) % tablesize - 1; 
+		slot = Hash(value, seed) % tableSize - 1; 
 		if (table[slot] == 0) {
 			// Slot is occupied - try again.
 			seed++; 
@@ -194,10 +194,12 @@ Did anyone see that *mod* (%) in there?! It's looking so innocuous, but mod is d
 Ready? 
 
 Make the tableSize a power of two! Then we can take advantage of a binary operation instead of mod. This is much more efficient on a processor level because there are single processor operations for this as opposed to mod which requires special hardware or complicated algorithms, which makes things rough if we want to run this on Bertha's Cheapo FPGA. 
+
 ```
 // Works if the tableSize is a power of 2. 
 slot = Hash(value, seed) & tableSize - 1; 
 ```
+
 Now, if you'll excuse me, I'll pull the "verification is left to the curious reader" trick now.
 
 **...but can we do better?**
@@ -224,7 +226,8 @@ HashZeroInlined(x) {
 	// x + 0, or just x
 }
 ```
-We'd of course use the `HashZeroInlined(x)` function first in our program. If it failed, then we'd go ahead with the loop that finds a seed that works using `Hash(x, seed). 
+We'd of course use the `HashZeroInlined(x)` function first in our program. If it failed, then we'd go ahead with the loop that finds a seed that works using `Hash(x, seed)`. 
+
 **...but can we do better?**
 
 ###Double Bonus Round: Compression
