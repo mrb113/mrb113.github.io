@@ -130,7 +130,7 @@ Yes, that is a goto that you see! The goto has been unfairly persecuted in progr
 
 **...but can we do better?**
 
-## Fast Fail: 
+### Fast Fail: 
 You see how we have that big `TimeConsumingOperation()` happening right up front? Say that's O(N) or worse. We know that the check for `TableIsFull` is O(1)... and can fail. If that fails after we did the time consuming operation, we throw our hands up and say
  
 >*"Why'd I even waste my time? Ya know, Marsha, I told myself we were staying together for the kids, but really that wasn't true and I just got hurt. I should have gotten outta there long ago".*
