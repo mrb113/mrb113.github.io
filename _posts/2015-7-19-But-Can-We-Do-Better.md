@@ -19,6 +19,7 @@ This article uses C for the examples since that's what's easiest for me to write
 *__Time for a game of "Can We Do Better"!__*
 
 **Problem:** Write a simple algorithm that inserts a number into a table using a hash that takes a seed, such that inserting `x` into a table with seed 0 would look like: 
+
 ```
 slot = Hash(x, 0);
 table[slot] = x % tableSize - 1; 
@@ -37,13 +38,16 @@ So, we have our unoptimized version that we banged together: (yes, I am hypothet
 /* Inserts a value into the table array */ 
 bool InsertIntoTableUnoptimized(int* table, int tableSize, int value) {
 	int slot; 
+	int seed; 
 	bool slotFound; 
 
 	printf("Doing some time-consuming operations on the table"); 
+
 	if (!TimeConsumingOperation()) {
 		printf("Insertion into table failed!\n"); 
 		return false; 
-	}	 
+	}
+	 
 	if(TableIsFull) {
 		printf("Insertion into table failed!\n"); 
 		return false; 
@@ -55,7 +59,7 @@ bool InsertIntoTableUnoptimized(int* table, int tableSize, int value) {
 	// "Nice loop you have there... shame if we had to alloacate an int or two
 	// every time we went through it... "
 
-	int seed = 0; 
+	seed = 0; 
 	slotFound = false; 
 	while (!slotFound) {
 		slot = Hash(value, seed) % tableSize  - 1; 
