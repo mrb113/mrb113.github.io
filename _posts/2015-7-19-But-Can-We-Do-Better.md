@@ -241,7 +241,7 @@ You mean to tell me that we're keeping this behemoth table that's mostly empty i
 
 *Go wash that mouth out with soap, young lady!*
 
-I'm not going to do any code for this portion, but think about it: If memory usage is important to us and we have a big data structure that's mostly empty and that we don't touch all that often, we can maybe think about using a compression algorithm on it. You're playing with fire a little bit here since you're adding extra overhead to uncompress it when you need it, but in some cases it's worth it. The point here is that you need to make considerations like this and do the necessary experimentation to determine whether or not it's worth it for your case. 
+I'm not going to do any code for this portion, but think about it: If memory usage is important to us and we have a big data structure that's mostly empty and that we don't touch all that often, we can maybe think about using a compression algorithm on it. You're playing with fire a little bit here since you're adding extra overhead to uncompress it when you need it, but in some cases it's worth it. The point here is that you need to make considerations like this and do the necessary experimentation to determine whether or not it's worth it for your case. And, of course, to always ask yourself... 
 
 **...but can we do better?**
 
