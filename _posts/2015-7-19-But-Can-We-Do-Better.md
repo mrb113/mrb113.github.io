@@ -22,7 +22,7 @@ This article uses C for the examples since that's what's easiest for me to write
 
 ```
 slot = Hash(x, 0);
-table[slot] = x % tableSize - 1; 
+table[slot] = x % (tableSize - 1); 
 ``` 
 *(We subtract 1 because the table is zero indexed. Naughty off-by-one errors are not welcome here).*
 
@@ -62,7 +62,7 @@ bool InsertIntoTableUnoptimized(int* table, int tableSize, int value) {
 	seed = 0; 
 	slotFound = false; 
 	while (!slotFound) {
-		slot = Hash(value, seed) % tableSize  - 1; 
+		slot = Hash(value, seed) % (tableSize  - 1); 
 		if (table[slot] == 0) {
 			// Slot is occupied - try again.
 			seed++; 
@@ -110,7 +110,7 @@ bool InsertIntoTableBetter(int* table, int tableSize, int value) {
 	seed = 0; 
 	slotFound = false; 
 	while (!slotFound) {
-		slot = Hash(value, seed) % tableSize - 1; 
+		slot = Hash(value, seed) % (tableSize - 1); 
 		if (table[slot] == 0) {
 			// Slot is occupied - try again.
 			seed++; 
@@ -194,7 +194,7 @@ Our code looks pretty good so far and strikes a pretty nice balance of optimizat
 We find a slot with the following calculation:
 
 ```
-slot = Hash(value, seed) % tableSize - 1;
+slot = Hash(value, seed) % (tableSize - 1);
 ```
 
 Did anyone see that *mod* (%) in there?! It's looking so innocuous, but mod is division which is very expensive from a hardware perspective. If we care about minimizing the number of cycles, we want to banish it ASAP. We can do a dirty trick to stop doing that disgusting division, though. The space overhead could be higher, but if we're okay with that, let's go full speed ahead. 
@@ -205,7 +205,7 @@ Make the tableSize a power of two! Then we can take advantage of a binary operat
 
 ```
 // Works if the tableSize is a power of 2. 
-slot = Hash(value, seed) & tableSize - 1; 
+slot = Hash(value, seed) & (tableSize - 1); 
 ```
 
 Now, if you'll excuse me, I'll pull the "verification is left to the curious reader" trick now.
