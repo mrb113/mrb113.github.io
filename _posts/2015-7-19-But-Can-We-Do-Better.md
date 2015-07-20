@@ -19,10 +19,12 @@ This article uses C for the examples since that's what's easiest for me to write
 *__Time for a game of "Can We Do Better"!__*
 
 **Problem:** Write a simple algorithm that inserts a number into a table using a hash that takes a seed, such that inserting `x` into a table with seed 0 would look like: 
+
 ```
 slot = Hash(x, 0);
 table[slot] = x % tableSize - 1; 
 ``` 
+
 *(We subtract 1 because the table is zero indexed. Naughty off-by-one errors are not welcome here).*
 
 Got it? Simple hashing.
