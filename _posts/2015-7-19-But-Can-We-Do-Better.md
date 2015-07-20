@@ -19,19 +19,17 @@ This article uses C for the examples since that's what's easiest for me to write
 *__Time for a game of "Can We Do Better"!__*
 
 **Problem:** Write a simple algorithm that inserts a number into a table using a hash that takes a seed, such that inserting `x` into a table with seed 0 would look like: 
-
 ```
 slot = Hash(x, 0);
 table[slot] = x % tableSize - 1; 
 ``` 
-
 *(We subtract 1 because the table is zero indexed. Naughty off-by-one errors are not welcome here).*
 
 Got it? Simple hashing.
 
 If `table[slot]` is already full, we try `Hash(x, 1)`, `Hash(x, 2)` until we have our slot. For the purposes of our problem, `Hash(x, seed)` is a good hash function that generates few collisions and will give a valid slot for some seed (that is, there won't be an infinite loop or stack overflow while we're looking for our hash slot. The function is good, people. Moving on). I'm also including `bool TimeConsumingOperation()` which represents a, well, time consuming operation that can fail - fairly standard thing that shows up often in real life. 
 
-*p.s. This is a simplification of one of my favorite problems: Perfect Hashing. That's for another post, though. If you're interested in my performant perfect hashing program that this example is based on, but you can see it [here](https://github.com/mrb113/PerfectHash).* 
+*p.s. This is a simplification of one of my favorite problems: Perfect Hashing. That's for another post, though. If you're interested in my performant perfect hashing program that this example is based on, you can see it [here](https://github.com/mrb113/PerfectHash).* 
 
 So, we have our unoptimized version that we banged together: (yes, I am hypothetically using stdbool.h. If you don't use C, you may not know that C does not come built in with boolean true/false values! So we have to add them in ourselves)
 
@@ -41,7 +39,7 @@ bool InsertIntoTableUnoptimized(int* table, int tableSize, int value) {
 	int slot; 
 	bool slotFound; 
 
-	printf("Doing some time-consuming operations on the table\n"); 
+	printf("Doing some time-consuming operations on the table"); 
 	if (!TimeConsumingOperation()) {
 		printf("Insertion into table failed!\n"); 
 		return false; 
@@ -79,7 +77,7 @@ It answers our question and incorporates some good programming practices. You ma
 **...but can we do better?**
 
 
-##Removing duplicated code 
+###Removing duplicated code 
 Duplicated code is one of those things that you hope your compiler will look kindly upon you for, but let's nuke it for readability and just in case we're using Joe Bob's Hillbilly Compiler. You see that each time we fail, we print an error message and return false. If you're not a C person or systems programmer, your first thought might be "make a method that you call on failure". Good idea, but I don't like it here. This may be good in certain languages/situations, but I'm gonna show you what the industry standard is for native code. If you don't already know what's coming, then chances are I might shock you a little due to some misinformation you may have heard. 
 
 ```
@@ -89,7 +87,7 @@ bool InsertIntoTableBetter(int* table, int tableSize, int value) {
 	int seed; 
 	bool slotFound; 
 
-	printf("Doing some time-consuming operations on the table\n"); 
+	printf("Doing some time-consuming operations on the table"); 
 
 	if (!TimeConsumingOperation()) {
 		goto Failure; 
@@ -130,7 +128,7 @@ Yes, that is a goto that you see! The goto has been unfairly persecuted in progr
 
 **...but can we do better?**
 
-##Fast Fail
+## Fast Fail: 
 You see how we have that big `TimeConsumingOperation()` happening right up front? Say that's O(N) or worse. We know that the check for `TableIsFull` is O(1)... and can fail. If that fails after we did the time consuming operation, we throw our hands up and say
  
 >*"Why'd I even waste my time? Ya know, Marsha, I told myself we were staying together for the kids, but really that wasn't true and I just got hurt. I should have gotten outta there long ago".*
@@ -143,7 +141,7 @@ if(TableIsFull) {
 	goto Failure; 
 }
 
-printf("Doing some time-consuming operations on the table\n"); 
+printf("Doing some time-consuming operations on the table"); 
 if (!TimeConsumingOperation()) {
 	goto Failure; 
 }	
@@ -154,7 +152,7 @@ We've gone for the low hanging fruit already and our program looks pretty decent
 
 **...but can we do better?**
 
-##Watch Your Loops
+###Watch Your Loops
 I'm not sure if this practice has a name, but we have to think really hard about whether our loops can get out of hand. In our case, we already have the guarantee that our `Hash(value, seed)` will eventually give us a value... but what if it takes 1000 iterations for a certain value to find a seed that works? What if that keeps happening for all zillion values that we're inserting? We can't afford that on Jimbo's Dinosaur Machine. Jimbo's gonna toss that machine right out the window and sue us for the cost of the new one... or something. 
 
 What we really want is a version of fast fail for our loop.
@@ -188,7 +186,7 @@ Our code looks pretty good so far and strikes a pretty nice balance of optimizat
 
 **...but can we do better?**
 
-##Power of Two Tricks
+###Power of Two Tricks
 We find a slot with the following calculation:
 
 ```
@@ -210,7 +208,7 @@ Now, if you'll excuse me, I'll pull the "verification is left to the curious rea
 
 **...but can we do better?**
 
-##Bonus Round: Inlining
+###Bonus Round: Inlining
 Welcome to the bonus round! Here we'll talk about things that are a little more intense than your garden variety optimization that we did above and aren't necessary for most cases, but I encourage you to at least consider them to get into the spirit of optimization the next time you're coding. The point is that it could be worth it to experiment with your program and take advantage of facts that the compiler couldn't possibly know.
 
 Remember that magic `Hash(x, seed)` function that we have? Well, let's say that we've determined that `Hash(x, 0)` works 65% of the time and that we don't have to try any more seeds after 0. If we are really really gung ho about minimizing cycles, we can take advantage of this fact and force the compiler to optimize for the path where `seed = 0`. 
@@ -236,7 +234,7 @@ We'd of course use the `HashZeroInlined(x)` function first in our program. If it
 
 **...but can we do better?**
 
-##Double Bonus Round: Compression
+###Double Bonus Round: Compression
 Oh my, now we're getting really fancy. What if our table has a large size and doesn't get insertions very often? 
 
 You mean to tell me that we're keeping this behemoth table that's mostly empty in memory?! 
