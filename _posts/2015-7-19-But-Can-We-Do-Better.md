@@ -1,7 +1,6 @@
-
 ---
 layout: post
-title: "...But can we do better?" Code optimization: Why you should do it and how to start
+title: ...But can we do better? Code optimization: Why you should do it and how to start
 ---
 
 When I first learned to program in high school and college, the emphasis was on correctness and not on performance. When I taught students programming in college as a teaching assistant, I would often point out a suboptimal code path to the student. I can't tell you how many times I heard the following phrase: "Well, processors are fast enough these days that it doesn't really matter. Even still, the compiler will optimize it away". 
