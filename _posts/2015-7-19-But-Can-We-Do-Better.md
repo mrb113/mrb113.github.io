@@ -124,7 +124,7 @@ Failure:
 }
 ```
 
-Yes, that is a goto that you see! The goto has been unfairly prosecuted in programming classes across the globe and even by [Dijkstra himself](http://www.u.arizona.edu/~rubinson/copyright_violations/Go_To_Considered_Harmful.html). As a former teaching assistant for many programming classes, I am fully aware of the monstrosities that students are capable of, so I do understand banning it from programming classes. You guys are mature enough to wield the power of goto... right? I'm trusting you to not commit any sins with it now that you know that goto is actually an industry standard in failure and cleanup cases. 
+Yes, that is a goto that you see! The goto has been unfairly persecuted in programming classes across the globe and even by [Dijkstra himself](http://www.u.arizona.edu/~rubinson/copyright_violations/Go_To_Considered_Harmful.html). As a former teaching assistant for many programming classes, I am fully aware of the monstrosities that students are capable of, so I do understand banning it from programming classes. You guys are mature enough to wield the power of goto... right? I'm trusting you to not commit any sins with it now that you know that goto is actually an industry standard in failure and cleanup cases. 
 
 **...but can we do better?**
 
@@ -188,7 +188,11 @@ Our code looks pretty good so far and strikes a pretty nice balance of optimizat
 
 ###Power of Two Tricks
 We find a slot with the following calculation:
-`slot = Hash(value, seed) % tableSize;`
+
+```
+slot = Hash(value, seed) % tableSize - 1;
+```
+
 Did anyone see that *mod* (%) in there?! It's looking so innocuous, but mod is division which is very expensive from a hardware perspective. If we care about minimizing the number of cycles, we want to banish it ASAP. We can do a dirty trick to stop doing that disgusting division, though. The space overhead could be higher, but if we're okay with that, let's go full speed ahead. 
 
 Ready? 
