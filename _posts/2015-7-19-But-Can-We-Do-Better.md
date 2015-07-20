@@ -41,7 +41,7 @@ bool InsertIntoTableUnoptimized(int* table, int tableSize, int value) {
 	int slot; 
 	bool slotFound; 
 
-	printf("Doing some time-consuming operations on the table"); 
+	printf("Doing some time-consuming operations on the table\n"); 
 	if (!TimeConsumingOperation()) {
 		printf("Insertion into table failed!\n"); 
 		return false; 
@@ -89,7 +89,7 @@ bool InsertIntoTableBetter(int* table, int tableSize, int value) {
 	int seed; 
 	bool slotFound; 
 
-	printf("Doing some time-consuming operations on the table"); 
+	printf("Doing some time-consuming operations on the table\n"); 
 
 	if (!TimeConsumingOperation()) {
 		goto Failure; 
@@ -143,7 +143,7 @@ if(TableIsFull) {
 	goto Failure; 
 }
 
-printf("Doing some time-consuming operations on the table"); 
+printf("Doing some time-consuming operations on the table\n"); 
 if (!TimeConsumingOperation()) {
 	goto Failure; 
 }	
