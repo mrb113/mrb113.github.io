@@ -8,7 +8,7 @@ title: Book Review - "Open-How Compaq Ended IBM's PC Domination and Helped Inven
 
 ---
 
-I have been interested in the Compaq story for some time. The first computer I remember having was our Compaq Presario desktop, so you might say that it was the first name in hardware that I knew. I'm not the only one who is fascinated about Compaq - not only is there a book about it, but it provided the inspiration and base storyline for the fictional AMC television series <a href="http://www.imdb.com/title/tt2543312/">Halt and Catch Fire</a>.
+I have been interested in the <a href="https://en.wikipedia.org/wiki/Compaq">Compaq</a> story for some time. The first computer I remember having was our Compaq Presario desktop, so you might say that it was the first name in hardware that I knew. I'm not the only one who is fascinated about Compaq - not only is there a book about it, but it provided the inspiration and base storyline for the fictional AMC television series <a href="http://www.imdb.com/title/tt2543312/">Halt and Catch Fire</a>.
 
 ####The rise of Compaq and the Industry Standard
 
@@ -24,7 +24,9 @@ The way they got around this legally is to have one guy read the BIOS code (it w
 
 Isn't that just so cool?! I wished that Canion would have given that more than two sentences and gave a perspective from one of the engineers who did it. There are several other reverse-engineering instances in the company's history and none of them got more than a sentence. Ex-Compaq-engineers, if you're reading this somehow, write a companion book about your endeavours in reverse-engineering! 
 
-There are a lot of dramatic points like this in the company story. One of them is when Compaq led the "Gang of Nine" - nine companies who publically showed support and manufacturing commitments to a 32-bit bus. This was a direct attack on IBM's new PS/2 machine which used the proprietary MicroChannel bus. As you may know, I work on buses (something that's rarely in the public eye), so I particularly enjoyed seeing it in the spotlight in this part.
+There are a lot of dramatic points like this in the company story. One of them is when Compaq led the "Gang of Nine" - nine companies who publically showed support and manufacturing commitments to a 32-bit bus. This was a direct attack on IBM's new PS/2 machine which used the proprietary MicroChannel bus. As you may know, I work on buses (something that's rarely in the public eye), so I particularly enjoyed seeing it in the spotlight in this part. My sister is extremely fond of telling "bus driver" jokes since, you know, writing bus drivers. Canion seems to be fond of these himself and I was a little bit gleeful when he threw one in: 
+
+>"...we were now confident the [other companies] would be relatively easy to convince that the "bus" was about to leave the station and they needed to be on it"
 
 A second companion book I'd like to see is one focusing on IBM. Big Blue plays the antagonist in most of the Compaq story - they eventually were run out of the PC business thanks to the "revolution" incited by Compaq, but they were able to diversify their business mix enough to stay afloat and remain an industry player. The book highlights the shots Compaq fired at IBM as well as provides an analysis on how IBM failed in responding to them, which was good for Compaq, but led to the demise of IBM's PC business.
 
