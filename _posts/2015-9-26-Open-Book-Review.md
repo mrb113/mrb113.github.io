@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Book review - "Open: How Compaq Ended IBM's PC Domination and Helped Invent Modern Computing" by Rod Canion
+title: Book review - Open: How Compaq Ended IBM's PC Domination and Helped Invent Modern Computing by Rod Canion
 ---
 
 I have been interested in the Compaq story for some time. The first computer I remember having was our Compaq Presario desktop, so you might say that it was the first name in hardware that I knew. I'm not the only one who is fascinated about Compaq - not only is there a book about it, but it provided the inspiration and base storyline for the fictional AMC television series Halt and Catch Fire. 
