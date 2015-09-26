@@ -3,7 +3,13 @@ layout: post
 title: Book Review - Open by Rod Canion
 ---
 
+###<a href="http://www.amazon.com/Open-Compaq-Domination-Helped-Computing/dp/1937856992">Open: How Compaq Ended IBM's PC Domination and Helped Invent Modern Computing</a>
+###4.5/5
+
+---
+
 I have been interested in the Compaq story for some time. The first computer I remember having was our Compaq Presario desktop, so you might say that it was the first name in hardware that I knew. I'm not the only one who is fascinated about Compaq - not only is there a book about it, but it provided the inspiration and base storyline for the fictional AMC television series Halt and Catch Fire. 
+
 If you're not familiar with Compaq's beginnings, take yourself to Texas in the early 1980s. At the time, the PC industry was dominated by IBM and its proprietary standards. If you bought a new computer or switched brands, you had to buy new versions of all the software that it ran. (I was not around at this time, and I'm sort of glad about it). 
 Three guys quit their jobs at Texas Instruments and created a computer manufacturing startup that aimed to corner a market that IBM didn't have - portable computers (I wasn't around for those either). To increase the competitiveness of their product, they decided that it needed to be compatible with all of the IBM versions of software. 
 After a lot of tough decisions, innovation, and luck, Compaq became an industry leader and created the industry standard of compatibility that we all take for granted today. 
@@ -22,6 +28,8 @@ A second companion book I'd like to see is one focusing on IBM. Big Blue plays t
 Canion was booted from Compaq in 1991 - for a multitude of reasons (one could argue that the techniques that set Compaq apart in the 1980s didn't work anymore in the 90s), profits dropped. Disagreements on how to move forward resulted in the board of directors forcing Canion's resignation.  All outside sources I can find indicate that Canion was an extremely popular CEO among employees. Though his departure is (wisely, I thought) glazed over in the book, I couldn't help but feel like I was reading the end of an era, even though I was not around for it. The company did turn around to become the largest supplier of PCs in the 90s, but not with Canion at its helm.
 
 If you don't know the end of the Compaq story, here it is: Compaq was acquired by Hewlett-Packard in 2002. In 2013, HP retired the Compaq brand name, which makes me feel almost sad, but companies have to make branding decisions that help their business.
+
+---
 
 One major thing I noticed that's more subtle in this book: 
 Many people I've met look back fondly on these "Wild West" days of the computing industry. "What a time to be in technology!", they say - I can't imagine how amazing it would be to be in an industry that's The Next Big Thing. 
