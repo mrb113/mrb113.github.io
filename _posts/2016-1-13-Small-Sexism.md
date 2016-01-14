@@ -14,6 +14,7 @@ She was wearing a bright orange coat, but why would you squander your time to fi
 My advice to any women in tech is always to stop talking about how you're a woman in technology and start talking about technology.
 
 This woman did exactly that - she responded with some quip like "Orange is bright and I'm optimistic about the bright future in our org"... and then resumed talking about the bright future in the org. And with that, back to your regularly scheduled programming.
+
 ---
 
 Quick update: I am having a very busy (and wonderful) month filled with travel, [marathon training](http://www.fargomarathon.com/), and lots of code at work. This is exactly how I like it, but it's not conducive to writing nice blog posts. I have a couple of blog post ideas on the backburner, but I am sort of lazy about putting in the writing. 
