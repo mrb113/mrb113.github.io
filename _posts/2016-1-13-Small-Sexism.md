@@ -11,7 +11,10 @@ The org (~100 people) had a meeting today which included a short Q & A with said
 
 She was wearing a bright orange coat, but why would you squander your time to find out about the future to crack a joke about her clothes? It reminds me of the jokes about Hillary Clinton's hair, Angela Merkel's less-than-hip wardrobe, etc. The jokers certainly don't mean harm and it's not that big of a deal, but the fact that we work in a society that permits such jokes reminds me why we have so many focus groups for women in tech.
 
-My advice to any women in tech is still to stop talking about how you're a woman in technology and start talking about technology. This lady did exactly that - she responded with some quip like "Orange is bright and I'm optimistic about the bright future in our org"... and then resumed talking about the bright future in the org. And with that, back to your regularly scheduled programming.
+My advice to any women in tech is always to stop talking about how you're a woman in technology and start talking about technology.
+
+This woman did exactly that - she responded with some quip like "Orange is bright and I'm optimistic about the bright future in our org"... and then resumed talking about the bright future in the org. And with that, back to your regularly scheduled programming.
+---
 
 Quick update: I am having a very busy (and wonderful) month filled with travel, [marathon training](http://www.fargomarathon.com/), and lots of code at work. This is exactly how I like it, but it's not conducive to writing nice blog posts. I have a couple of blog post ideas on the backburner, but I am sort of lazy about putting in the writing. 
 
