@@ -3,7 +3,7 @@ layout: post
 title: Sexism & RTL
 ---
 
-One of the three leaders in my organization at work is a woman in her 60s, and she is a BOSS. Pretty sure everything thinks so. Enough said.
+One of the three leaders in my organization at work is a woman in her 60s, and she is a BOSS. Pretty sure everyone thinks so. Enough said.
 
 The org (~100 people) had a meeting today which included a short Q & A with said leaders. When they opened up the floor for questions, some man who is apparently my colleague rasied his hand, was called on, and asked this woman (his superior)
 
