@@ -3,7 +3,9 @@ layout: post
 title: Priority Inversions on Mars - Inspired by The Martian
 ---
 
-I recently read and extremely enjoyed _The Martian_ by Andy Weir, so I thought a little _The Martian_ themed post is in order. Don’t worry if you haven’t read the book – this post doesn’t require any knowledge of the book (you should still read it though) or even of priority inversions.
+I recently read and extremely enjoyed _The Martian_ by Andy Weir, so I thought a little _The Martian_ themed post is in order. Don’t worry if you haven’t read the book (or seen the movie) – this post doesn’t require any knowledge of the book (you should still read it though) or even of priority inversions.
+
+![alt text](https://github.com/mrb113/mrb113.github.io/blob/master/images/The_Martian_film_poster.jpg "The Martian. Read it.")
 
 In the book, some NASA scientists are trying to solve a big problem with their fictional Mars mission. To do so, they investigate a previous, real-life mission: Pathfinder, the Mars expedition that took place in 1997. Sojourner was the name of the rover on Mars. The character muses:
 
@@ -70,7 +72,7 @@ I love this story – a real-life, high-stakes space mission almost bungled by a
 
 - http://research.microsoft.com/en-us/um/people/mbj/Mars_Pathfinder/Mars_Pathfinder.html
 - http://www.nasa.gov/mission_pages/mars-pathfinder/
-- [http://www.amazon.com/gp/product/B00EMXBDMA/ref=dp-kindle-redirect?ie=UTF8&btkr=1](Amazon link for The Martian book)
+- [Amazon link to The Martian book](http://www.amazon.com/gp/product/B00EMXBDMA/ref=dp-kindle-redirect?ie=UTF8&btkr=1])
 - https://en.wikipedia.org/wiki/Priority_inversion
 - https://en.wikipedia.org/wiki/Priority_inheritance
 
