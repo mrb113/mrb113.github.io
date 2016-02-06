@@ -4,6 +4,7 @@ title: Book Review - "Open-How Compaq Ended IBM's PC Domination and Helped Inven
 ---
 
 ### <a href="http://www.amazon.com/Open-Compaq-Domination-Helped-Computing/dp/1937856992">Open: How Compaq Ended IBM's PC Domination and Helped Invent Modern Computing</a> by Rod Canion
+
 ### 4.5/5
 
 ---
