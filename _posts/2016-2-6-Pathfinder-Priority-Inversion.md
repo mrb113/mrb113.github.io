@@ -17,10 +17,12 @@ He’s interrupted by a different character who wants him to focus on things tha
 ---
 ###What is a priority inversion?
 
-Not all threads are created equal. Some threads are more important than others, and hence are assigned a higher priority. A thread scheduler (called the “dispatcher” in Windows, for what it’s worth) will do its best to schedule higher priority threads first. 
+Not all threads are created equal. Some threads are more important than others, and hence are assigned a higher priority. A thread scheduler will do its best to schedule higher priority threads first. 
 
 In general, a high priority task will interrupt a lower priority task, complete, and then the lower priority task is able to complete.
-A priority inversion occurs when there is a high priority task and a lower priority task, but the high priority task cannot run until the lower priority task is done. This is especially problematic if the high priority task needs to wait a long time for the lower priority task to complete.
+
+A *priority inversion* occurs when there is a high priority task and a lower priority task. The high priority task cannot run until the lower priority task is done. 
+That is, their relative priorities are inadvertantly inverted.
 
 How can this be? The answer takes us back to Mars.
 
