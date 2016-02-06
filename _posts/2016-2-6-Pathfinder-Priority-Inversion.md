@@ -38,7 +38,7 @@ In what I consider to be one of the great feats of debugging in our time, engine
 
 ###Diagnosis: Priority inversion
 
-Pathfinder has three threads that run at three different priorities. A thread at a higher priority interrupts a thread at a lower priority and is allowed to finish running first. Each of the threads shared a single memory area, called the *information bus*. Only one thread can access the information bus at a time– if another thread wants to read from or write to the bus, it has to wait for the resource to become available. This prevents a thread’s information from being overwritten by another thread. (Concurrency-savvy readers: the information bus is protected with mutexes). 
+Pathfinder has three threads that run at three different priorities. A thread scheduled at a higher priority interrupts a thread running at a lower priority. Each of the threads shared a single memory area, called the *information bus*. Only one thread can access the information bus at a time– if another thread wants to read from or write to the bus, it has to wait for the resource to become available. This prevents a thread’s information from being overwritten by another thread. (Concurrency-savvy readers: the information bus is protected with mutexes). 
 
 Introducing our three thread contestants: 
 
@@ -46,7 +46,7 @@ Introducing our three thread contestants:
 2.	__Medium priority__: Communications task. Doesn’t need the information bus, but it takes a long time to finish running. Pathfinder takes longer than ET to phone home.
 3.	__High priority__: Bus management. This task takes the data that other threads have published to the information bus and sends it off to the right places in the operating system. It acquires exclusive access to the bus while it is reading/writing information here until it is done. This thread is critical to the correct operation of Pathfinder – if it doesn’t run for a while, the spacecraft assumes there is a fatal error and will initiate a system reset. 
 
-Given those clues, you can probably guess that the reset is initiated from Pathfinder getting into a state where the high priority thread hasn’t run recently enough and the system watchdog initiates a reset. 
+Given those clues, you can probably guess that the reset is initiated from Pathfinder getting into a state where the high priority thread hasn’t run recently enough and the system watchdog initiates a reset. Keen readers probably suspect that there is foul play involving access to the information bus.
 
 Consider the following scenario which led to the eventual priority inversion and system reset:
 
