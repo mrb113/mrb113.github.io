@@ -5,7 +5,7 @@ title: Priority Inversions on Mars - Inspired by The Martian
 
 I recently read and extremely enjoyed _The Martian_ by Andy Weir, so I thought a little _The Martian_ themed post is in order. Don’t worry if you haven’t read the book (or seen the movie) – this post doesn’t require any knowledge of the book (you should still read it, though. It's that good.) or even of priority inversions.
 
-![alt text](https://github.com/mrb113/mrb113.github.io/blob/master/images/The_Martian_film_poster.jpg "The Martian. Read it.")
+![alt text](https://github.com/mrb113/mrb113.github.io/blob/master/images/The_Martian_film_poster.jpg "The Martian. Read it.")!
 
 In the book, some NASA scientists are trying to solve a big problem with their fictional Mars mission. To do so, they investigate a previous, real-life mission: Pathfinder, the Mars expedition that took place in 1997. Sojourner was the name of the rover on Mars. The character muses:
 
@@ -30,7 +30,7 @@ How can this be? The answer takes us back to Mars.
 
 In July 1997, the world applauded as the first Mars mission to successfully use rovers, Pathfinder, landed on the red planet.
 
-![alt text](https://github.com/mrb113/mrb113.github.io/blob/master/images/523px-Sojourner_on_Mars_PIA01122.jpg "Sojourner rover")
+![alt text](https://github.com/mrb113/mrb113.github.io/blob/master/images/523px-Sojourner_on_Mars_PIA01122.jpg "Sojourner rover")!
 
 The excitement was short-lived for NASA engineers, though, because Pathfinder started experiencing system resets and losing data. Uh oh. In case it’s not obvious, your Martian lander should definitely not be continually resetting itself when it’s showtime. 
 
