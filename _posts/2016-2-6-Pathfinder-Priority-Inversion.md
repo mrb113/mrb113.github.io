@@ -3,7 +3,7 @@ layout: post
 title: Priority Inversions on Mars - Inspired by The Martian
 ---
 
-I recently read and extremely enjoyed _The Martian_ by Andy Weir, so I thought a little _The Martian_ themed post is in order. Don’t worry if you haven’t read the book (or seen the movie) – this post doesn’t require any knowledge of the book (you should still read it though) or even of priority inversions.
+I recently read and extremely enjoyed _The Martian_ by Andy Weir, so I thought a little _The Martian_ themed post is in order. Don’t worry if you haven’t read the book (or seen the movie) – this post doesn’t require any knowledge of the book (you should still read it, though. It's that good.) or even of priority inversions.
 
 ![alt text](https://github.com/mrb113/mrb113.github.io/blob/master/images/The_Martian_film_poster.jpg "The Martian. Read it.")
 
@@ -36,13 +36,13 @@ In what I consider to be one of the great feats of debugging in our time, engine
 
 ###Diagnosis: Priority inversion
 
-Pathfinder has three threads that run at three different priorities. A thread at a higher priority interrupts a thread at a lower priority and is allowed to finish running first. Each of the threads shared a single memory area, called the information bus. Only one thread can access the information bus at a time– if another thread wants to read from or write to the bus, it has to wait for the resource to become available. This prevents a thread’s information from being overwritten by another thread. (Concurrency-savvy readers: the information bus is protected with mutexes). 
+Pathfinder has three threads that run at three different priorities. A thread at a higher priority interrupts a thread at a lower priority and is allowed to finish running first. Each of the threads shared a single memory area, called the *information bus*. Only one thread can access the information bus at a time– if another thread wants to read from or write to the bus, it has to wait for the resource to become available. This prevents a thread’s information from being overwritten by another thread. (Concurrency-savvy readers: the information bus is protected with mutexes). 
 
 Introducing our three thread contestants: 
 
-1.	Low priority: Meteorological data gathering. This thread runs infrequently and publishes its data to the information bus so that it can get sent back to Earth. While it is publishing the data, it acquires exclusive access to the bus until it is done.
-2.	Medium priority: Communications task. Doesn’t need the information bus, but it takes a long time to finish running. Pathfinder takes longer than ET to phone home.
-3.	High priority: Bus management. This task takes the data that other threads have published to the information bus and sends it off to the right places in the operating system. It acquires exclusive access to the bus while it is reading/writing information here until it is done. This thread is critical to the correct operation of Pathfinder – if it doesn’t run for a while, the spacecraft assumes there is a fatal error and will initiate a system reset. 
+1.	__Low priority__: Meteorological data gathering. This thread runs infrequently and publishes its data to the information bus so that it can get sent back to Earth. While it is publishing the data, it acquires exclusive access to the bus until it is done.
+2.	__Medium priority__: Communications task. Doesn’t need the information bus, but it takes a long time to finish running. Pathfinder takes longer than ET to phone home.
+3.	__High priority__: Bus management. This task takes the data that other threads have published to the information bus and sends it off to the right places in the operating system. It acquires exclusive access to the bus while it is reading/writing information here until it is done. This thread is critical to the correct operation of Pathfinder – if it doesn’t run for a while, the spacecraft assumes there is a fatal error and will initiate a system reset. 
 
 Given those clues, you can probably guess that the reset is initiated from Pathfinder getting into a state where the high priority thread hasn’t run recently enough and the system watchdog initiates a reset. 
 
