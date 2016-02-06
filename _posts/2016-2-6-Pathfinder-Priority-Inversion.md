@@ -3,7 +3,7 @@ layout: post
 title: Priority Inversions on Mars - Inspired by The Martian
 ---
 
-I recently read and extremely enjoyed _The Martian_ by Andy Weir, so I thought a little _The Martian_ themed post is in order. Don’t worry if you haven’t read the book (or seen the movie) – this post doesn’t require any knowledge of the book (you should still read it, though. It's that good.) or even of priority inversions.
+I recently read and extremely enjoyed _The Martian_ by Andy Weir, so I thought a little _The Martian_ themed post is in order. Don’t worry if you haven’t read the book (or seen the movie) – this post doesn’t require any knowledge of the book (you should still read it, though. It's that good.) or even of priority inversions. There are also no spoilers about The Martian beyond what you could get from reading the back cover, so read on.
 
 ![The Martian](../images/The_Martian_film_poster.jpg)!
 
@@ -22,7 +22,7 @@ Not all threads are created equal. Some threads are more important than others, 
 
 In general, a high priority task will interrupt a lower priority task, complete, and then the lower priority task is able to complete.
 
-A *priority inversion* occurs when there is a high priority task and a lower priority task. The high priority task cannot run until the lower priority task is done. 
+A *priority inversion* occurs when there is a high priority task and a lower priority task - the high priority task cannot run until the lower priority task is done. 
 That is, their relative priorities are inadvertantly inverted.
 
 How can this be? The answer takes us back to Mars.
