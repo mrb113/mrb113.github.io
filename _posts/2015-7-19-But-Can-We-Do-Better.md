@@ -81,7 +81,7 @@ It answers our question and incorporates some good programming practices. You ma
 **...but can we do better?**
 
 
-###Removing duplicated code 
+### Removing duplicated code 
 Duplicated code is one of those things that you hope your compiler will look kindly upon you for, but let's nuke it for readability and just in case we're using Joe Bob's Hillbilly Compiler. You see that each time we fail, we print an error message and return false. If you're not a C person or systems programmer, your first thought might be "make a method that you call on failure". Good idea, but I don't like it here. This may be good in certain languages/situations, but I'm gonna show you what the industry standard is for native code. If you don't already know what's coming, then chances are I might shock you a little due to some misinformation you may have heard. 
 
 ```
@@ -156,7 +156,7 @@ We've gone for the low hanging fruit already and our program looks pretty decent
 
 **...but can we do better?**
 
-###Watch Your Loops
+### Watch Your Loops
 I'm not sure if this practice has a name, but we have to think really hard about whether our loops can get out of hand. In our case, we already have the guarantee that our `Hash(value, seed)` will eventually give us a value... but what if it takes 1000 iterations for a certain value to find a seed that works? What if that keeps happening for all zillion values that we're inserting? We can't afford that on Jimbo's Dinosaur Machine. Jimbo's gonna toss that machine right out the window and sue us for the cost of the new one... or something. 
 
 What we really want is a version of fast fail for our loop.
@@ -190,7 +190,7 @@ Our code looks pretty good so far and strikes a pretty nice balance of optimizat
 
 **...but can we do better?**
 
-###Power of Two Tricks
+### Power of Two Tricks
 We find a slot with the following calculation:
 
 ```
@@ -212,7 +212,7 @@ Now, if you'll excuse me, I'll pull the "verification is left to the curious rea
 
 **...but can we do better?**
 
-###Bonus Round: Inlining
+### Bonus Round: Inlining
 Welcome to the bonus round! Here we'll talk about things that are a little more intense than your garden variety optimization that we did above and aren't necessary for most cases, but I encourage you to at least consider them to get into the spirit of optimization the next time you're coding. The point is that it could be worth it to experiment with your program and take advantage of facts that the compiler couldn't possibly know.
 
 Remember that magic `Hash(x, seed)` function that we have? Well, let's say that we've determined that `Hash(x, 0)` works 65% of the time and that we don't have to try any more seeds after 0. If we are really really gung ho about minimizing cycles, we can take advantage of this fact and force the compiler to optimize for the path where `seed = 0`. 
@@ -238,7 +238,7 @@ We'd of course use the `HashZeroInlined(x)` function first in our program. If it
 
 **...but can we do better?**
 
-###Double Bonus Round: Compression
+### Double Bonus Round: Compression
 Oh my, now we're getting really fancy. What if our table has a large size and doesn't get insertions very often? 
 
 You mean to tell me that we're keeping this behemoth table that's mostly empty in memory?! 
