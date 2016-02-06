@@ -75,11 +75,11 @@ I love this story – a real-life, high-stakes space mission almost bungled by a
 
 ##### Links for further reading
 
-- http://research.microsoft.com/en-us/um/people/mbj/Mars_Pathfinder/Mars_Pathfinder.html
-- http://www.nasa.gov/mission_pages/mars-pathfinder/
+- [Microsoft's informal debriefing about the priority inversion](http://research.microsoft.com/en-us/um/people/mbj/Mars_Pathfinder/Mars_Pathfinder.html)
+- [Mars Pathfinder mission page](http://www.nasa.gov/mission_pages/mars-pathfinder/)
 - [Amazon link to The Martian book](http://www.amazon.com/gp/product/B00EMXBDMA/ref=dp-kindle-redirect?ie=UTF8&btkr=1])
-- https://en.wikipedia.org/wiki/Priority_inversion
-- https://en.wikipedia.org/wiki/Priority_inheritance
+- [Wikipedia: Priority inversion](https://en.wikipedia.org/wiki/Priority_inversion)
+- [Wikipedia: Priority inheritance](https://en.wikipedia.org/wiki/Priority_inheritance)
 
 
 
