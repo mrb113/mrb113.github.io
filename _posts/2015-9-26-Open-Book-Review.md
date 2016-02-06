@@ -3,14 +3,14 @@ layout: post
 title: Book Review - "Open-How Compaq Ended IBM's PC Domination and Helped Invent Modern Computing"
 ---
 
-###<a href="http://www.amazon.com/Open-Compaq-Domination-Helped-Computing/dp/1937856992">Open: How Compaq Ended IBM's PC Domination and Helped Invent Modern Computing</a> by Rod Canion
-###4.5/5
+### <a href="http://www.amazon.com/Open-Compaq-Domination-Helped-Computing/dp/1937856992">Open: How Compaq Ended IBM's PC Domination and Helped Invent Modern Computing</a> by Rod Canion
+### 4.5/5
 
 ---
 
-I have been interested in the <a href="https://en.wikipedia.org/wiki/Compaq">Compaq</a> story for some time. The first computer I remember having was our Compaq Presario desktop, so you might say that it was the first name in hardware that I knew. I'm not the only one who is fascinated about Compaq - not only is there a book about it, but it provided the inspiration and base storyline for the fictional AMC television series <a href="http://www.imdb.com/title/tt2543312/">Halt and Catch Fire</a>.
+I have been interested in the <a href="https://en.wikipedia.org/wiki/Compaq">Compaq</a> story for some time. The first computer I remember having was our Compaq Presario desktop, so you might say that it was the first name in hardware that I knew. I'm not the only one who is fascinated about Compaq - not only is there a book about it, but it provided the inspiration and base storyline for the fictional AMC television series [Halt and Catch Fire](http://www.imdb.com/title/tt2543312/).
 
-####The rise of Compaq and the Industry Standard
+#### The rise of Compaq and the Industry Standard
 
 If you're not familiar with Compaq's beginnings, take yourself to Texas in the early 1980s. At the time, the PC industry was dominated by IBM and its proprietary standards. If you bought a new computer or switched brands, you had to buy new versions of all the software that it ran. (I was not around at this time, and I'm sort of glad about it). 
 Three guys quit their jobs at Texas Instruments and created a computer manufacturing startup that aimed to corner a market that IBM didn't have - portable computers (I wasn't around for those either). To increase the competitiveness of their product, they decided that it needed to be compatible with all of the IBM versions of software. 
@@ -30,7 +30,7 @@ There are a lot of dramatic points like this in the company story. One of them i
 
 A second companion book I'd like to see is one focusing on IBM. Big Blue plays the antagonist in most of the Compaq story - they eventually were run out of the PC business thanks to the "revolution" incited by Compaq, but they were able to diversify their business mix enough to stay afloat and remain an industry player. The book highlights the shots Compaq fired at IBM as well as provides an analysis on how IBM failed in responding to them, which was good for Compaq, but led to the demise of IBM's PC business.
 
-####The End of an Era
+#### The End of an Era
 
 Canion was booted from Compaq in 1991 - for a multitude of reasons (one could argue that the techniques that set Compaq apart in the 1980s didn't work anymore in the 90s), profits dropped. Disagreements on how to move forward resulted in the board of directors forcing Canion's resignation.  All outside sources I can find indicate that Canion was an extremely popular CEO among employees. Though his departure is (wisely, I thought) glazed over in the book, I couldn't help but feel like I was reading the end of an era, even though I was not around for it. The company did turn around to become the largest supplier of PCs in the 90s, but not with Canion at its helm.
 
@@ -38,7 +38,7 @@ If you don't know the end of the Compaq story, here it is: Compaq was acquired b
 
 ---
 
-####Texas, 1982
+#### Texas, 1982
 
 One major thing I noticed that's more subtle in this book: 
 Many people I've met look back fondly on these "Wild West" days of the computing industry. "What a time to be in technology!", they say - I can't imagine how amazing it would be to be in an industry that's The Next Big Thing. 
@@ -46,5 +46,5 @@ Many people I've met look back fondly on these "Wild West" days of the computing
 However, I can't help but read this book and think "what a terrible time it would have been for me to enter my career in technology". The major players have one technological victory after another and take on big projects that are huge risks and end up paying off - what would I dislike about that? 
 Rod, Jim, Bill, etc: it's SUCH an old boys' club. The barriers of entry for women in technology careers are much lower today than they were at the time. Texas, 1982. The white boys got to have it all. Washington, 2015: I can, too.
 
-####Recap
+#### Recap
 The book is a little dry at points, but if it doesn't want to make you go out and build something, then I don't know what will. Recommended to anyone interested in business or the computing industry. 4.5/5
