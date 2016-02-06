@@ -50,6 +50,7 @@ sass:
 # Use the following plug-ins
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+  - github-pages
 
 # Exclude these files from your production _site
 exclude:
