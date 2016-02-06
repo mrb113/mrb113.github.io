@@ -49,7 +49,7 @@ Given those clues, you can probably guess that the reset is initiated from Pathf
 Consider the following scenario which led to the eventual priority inversion and system reset:
 
 -	Low priority meteorological data thread opens the bus for exclusive access to publish its data.
--	High priority management thread cannot run while the low priority thread has exclusive access to the bus – it needs to wait until the low priority thread releases the bus before it can be scheduled. (note: this wait is an incredibly short period of time, which is why this priority inversion scenario is rare)
+-	High priority management thread wants to run, but it cannot run while the low priority thread has exclusive access to the bus – it needs to wait until the low priority thread releases the bus before it can be scheduled. (note: this wait is an incredibly short period of time, which is why this priority inversion scenario is rare)
 -	While the high priority thread is waiting, the medium priority communications thread is scheduled. This interrupts the low priority thread and runs for a long time.
 -	Wait a minute, the high priority thread is still waiting on the low priority thread to be done with the bus! Wait another minute, the low priority thread can’t run until the medium priority thread is done! Uh oh!
 -	While the medium priority thread is taking its sweet time to finish, the system watchdog gets tired of waiting for the high priority task to run and initiates a system reset. This does not necessarily occur every time since the medium priority thread could feasibly finish before the watchdog timeout. When it does occur, it’s bad news for Pathfinder.
