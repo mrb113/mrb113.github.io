@@ -15,7 +15,7 @@ In the book, some NASA scientists are trying to solve a big problem with their f
 He’s interrupted by a different character who wants him to focus on things that aren’t priority inversions. You’re in luck, though, since I do want to focus on priority inversions! I think my jaw dropped in excitement when I read this line regarding my favorite story about multithreading pitfalls in a New York Times bestseller. 
 
 ---
-###What is a priority inversion?
+### What is a priority inversion?
 
 Not all threads are created equal. Some threads are more important than others, and hence are assigned a higher priority. A thread scheduler will do its best to schedule higher priority threads first. (If the concept of threading is new to you, you can think of a thread as a task that runs on a computer processor).
 
@@ -26,7 +26,7 @@ That is, their relative priorities are inadvertantly inverted.
 
 How can this be? The answer takes us back to Mars.
 
-###Pathfinder's system reset
+### Pathfinder's system reset
 
 In July 1997, the world applauded as the first Mars mission to successfully use rovers, Pathfinder, landed on the red planet.
 
@@ -36,7 +36,7 @@ The excitement was short-lived for NASA engineers, though, because Pathfinder st
 
 In what I consider to be one of the great feats of debugging in our time, engineers at the Jet Propulsion Lab (JPL) spent hours and hours under pressure racing against the clock as they tried to reproduce the failure on a replica Pathfinder in their lab. (remember, they’re trying to fix something that’s quite literally out of this world). When they finally saw a system reset on their replica Pathfinder, they looked at the events that occurred and eventually determined the root cause.
 
-###Diagnosis: Priority inversion
+### Diagnosis: Priority inversion
 
 Pathfinder has three threads that run at three different priorities. A thread scheduled at a higher priority interrupts a thread running at a lower priority. Each of the threads shared a single memory area, called the *information bus*. Only one thread can access the information bus at a time– if another thread wants to read from or write to the bus, it has to wait for the resource to become available. This prevents a thread’s information from being overwritten by another thread. (Concurrency-savvy readers: the information bus is protected with mutexes). 
 
@@ -56,21 +56,21 @@ Consider the following scenario which led to the eventual priority inversion and
 -	Wait a minute, the high priority thread is still waiting on the low priority thread to be done with the bus! Wait another minute, the low priority thread can’t run until the medium priority thread is done! Uh oh!
 -	While the medium priority thread is taking its sweet time to finish, the system watchdog gets tired of waiting for the high priority task to run and initiates a system reset. This does not necessarily occur every time since the medium priority thread could feasibly finish before the watchdog timeout. When it does occur, it’s bad news for Pathfinder.
 
-###Why didn’t they catch this on Earth?
+### Why didn’t they catch this on Earth?
 
 NASA has longer statements that you can read about why exactly they didn’t catch this bug during development, but a major contributing factor is that the spacecraft was sending much more data while on Mars than in a lab. The stressful conditions allowed this faulty code path to be hit more frequently. 
 
-###How did they fix it?
+### How did they fix it?
 
 There are several different ways to fix a priority inversion. The JPL engineers chose *priority inheritance*. That means that any task (in this case, the low priority meteorological task) inherits the priority of a higher priority task that is waiting on a resource (information bus) it is holding. When it releases the resource, it assumes its original priority.
 
 ---
-###Concurrency is cool and relevant to pop culture after all!
+### Concurrency is cool and relevant to pop culture after all!
 
 I love this story – a real-life, high-stakes space mission almost bungled by a priority inversion, saved by engineers and computer theorists alike during long caffeine-fueled hours. Maybe it’s not as good as Mark Watney’s journey across Mars, but concurrent programming deserves to be the star of its own story once in a while.
 
 ---
-#####Links for further reading
+##### Links for further reading
 
 - http://research.microsoft.com/en-us/um/people/mbj/Mars_Pathfinder/Mars_Pathfinder.html
 - http://www.nasa.gov/mission_pages/mars-pathfinder/
