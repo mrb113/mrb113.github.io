@@ -5,7 +5,7 @@ title: Priority Inversions on Mars - Inspired by The Martian
 
 I recently read and extremely enjoyed _The Martian_ by Andy Weir, so I thought a little _The Martian_ themed post is in order. Don’t worry if you haven’t read the book (or seen the movie) – this post doesn’t require any knowledge of the book (you should still read it, though. It's that good.) or even of priority inversions.
 
-![alt text](https://github.com/mrb113/mrb113.github.io/blob/master/images/The_Martian_film_poster.jpg "The Martian. Read it.")!
+![The Martian](../images/The_Martian_film_poster.jpg)!
 
 In the book, some NASA scientists are trying to solve a big problem with their fictional Mars mission. To do so, they investigate a previous, real-life mission: Pathfinder, the Mars expedition that took place in 1997. Sojourner was the name of the rover on Mars. The character muses:
 
@@ -15,6 +15,7 @@ In the book, some NASA scientists are trying to solve a big problem with their f
 He’s interrupted by a different character who wants him to focus on things that aren’t priority inversions. You’re in luck, though, since I do want to focus on priority inversions! I think my jaw dropped in excitement when I read this line regarding my favorite story about multithreading pitfalls in a New York Times bestseller. 
 
 ---
+
 ### What is a priority inversion?
 
 Not all threads are created equal. Some threads are more important than others, and hence are assigned a higher priority. A thread scheduler will do its best to schedule higher priority threads first. (If the concept of threading is new to you, you can think of a thread as a task that runs on a computer processor).
@@ -30,7 +31,7 @@ How can this be? The answer takes us back to Mars.
 
 In July 1997, the world applauded as the first Mars mission to successfully use rovers, Pathfinder, landed on the red planet.
 
-![alt text](https://github.com/mrb113/mrb113.github.io/blob/master/images/523px-Sojourner_on_Mars_PIA01122.jpg "Sojourner rover")!
+![The Martian](../images/523px-Sojourner_on_Mars_PIA01122.jpg)!
 
 The excitement was short-lived for NASA engineers, though, because Pathfinder started experiencing system resets and losing data. Uh oh. In case it’s not obvious, your Martian lander should definitely not be continually resetting itself when it’s showtime. 
 
@@ -65,11 +66,13 @@ NASA has longer statements that you can read about why exactly they didn’t cat
 There are several different ways to fix a priority inversion. The JPL engineers chose *priority inheritance*. That means that any task (in this case, the low priority meteorological task) inherits the priority of a higher priority task that is waiting on a resource (information bus) it is holding. When it releases the resource, it assumes its original priority.
 
 ---
+
 ### Concurrency is cool and relevant to pop culture after all!
 
 I love this story – a real-life, high-stakes space mission almost bungled by a priority inversion, saved by engineers and computer theorists alike during long caffeine-fueled hours. Maybe it’s not as good as Mark Watney’s journey across Mars, but concurrent programming deserves to be the star of its own story once in a while.
 
 ---
+
 ##### Links for further reading
 
 - http://research.microsoft.com/en-us/um/people/mbj/Mars_Pathfinder/Mars_Pathfinder.html
