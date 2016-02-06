@@ -17,7 +17,7 @@ He’s interrupted by a different character who wants him to focus on things tha
 ---
 ###What is a priority inversion?
 
-Not all threads are created equal. Some threads are more important than others, and hence are assigned a higher priority. A thread scheduler will do its best to schedule higher priority threads first. (If the conecept of threading is new to you, you can think of a thread as a task that runs on a computer processor).
+Not all threads are created equal. Some threads are more important than others, and hence are assigned a higher priority. A thread scheduler will do its best to schedule higher priority threads first. (If the concept of threading is new to you, you can think of a thread as a task that runs on a computer processor).
 
 In general, a high priority task will interrupt a lower priority task, complete, and then the lower priority task is able to complete.
 
