@@ -7,13 +7,13 @@ Today I stumbled across (via the [OSR Twitter page](https://twitter.com/OSRDrive
 
 `!ndiskd.help` does as you’d expect and prints info about the commands within that extension:
 
-![!ndiskd.help](../images/ndiskdhelp_regular.png)
+![ndiskd.help](../images/ndiskdhelp_regular.PNG)
 
 If you ask for help with a sense of urgency:
 
 `!ndiskd.help!`
 
-![!ndiskd.help!](../images/ndiskdhelp_urgent.png)
+![urgent](../images/ndiskdhelp_urgent.PNG)
 
 It exclaims “Don’t Panic!”
 
@@ -23,7 +23,7 @@ I sent this to all 3 of my other friends who think WinDBG jokes are funny, inclu
 
 `!IToldYouSo`
 
-![!IToldYouSo](../images/itoldyouso.png)
+![!IToldYouSo](../images/itoldyouso.PNG)
 
 It is exactly the same thing as [!chksym](https://msdn.microsoft.com/en-us/library/windows/hardware/ff562234(v=vs.85).aspx), but with a more amusing name.
 
