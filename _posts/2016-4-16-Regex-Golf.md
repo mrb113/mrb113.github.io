@@ -15,15 +15,13 @@ Submissions close one hour after the competition begins.
 
 REMEMBER, you will win points based on a combination of brevity and correctness. There exists a correct regex for all of the problems. If you can't think of a perfect regex, try to come up with one that isn't perfect but will get you some points to keep you in the competition!
 
-(point these to the real links right before the competition starts)
+- [Problem 1 - Ring Ring](http://regex.alf.nu/2e2672a3a77f45f39dcb44e957481e68643890ff)
 
-- [Problem 1 - Ring Ring](https://msdn.microsoft.com/en-us/library/windows/hardware/ff562234(v=vs.85).aspx)
+- [Problem 2 - Conjunction Junction](http://regex.alf.nu/0c46c0be6d672f333e96301d99883a75690f023e) (really sorry about the blank line that ended up in here as something you need to match)
 
-- [Problem 2 - Conjunction Junction](https://msdn.microsoft.com/en-us/library/windows/hardware/ff562234(v=vs.85).aspx) (really sorry about the blank line that ended up in here as something you need to match)
+- [Problem 3 - EECS > Math](http://regex.alf.nu/fd9d8a5d0d329428452daf94d1ef2417dc15d3fd)
 
-- [Problem 3 - EECS > Math](https://msdn.microsoft.com/en-us/library/windows/hardware/ff562234(v=vs.85).aspx)
-
-- [Problem 4 - Version 4](https://msdn.microsoft.com/en-us/library/windows/hardware/ff562234(v=vs.85).aspx)
+- [Problem 4 - Version 4](http://regex.alf.nu/af3b669160724cd99720c3437dfbef0895135dbe)
 
 Must be present at the end to win a prize or a raffle gift. Raffle and winners will be announced at the end of the hour.
 Happy golfing!
