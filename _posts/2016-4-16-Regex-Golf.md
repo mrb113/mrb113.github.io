@@ -3,11 +3,13 @@ layout: post
 title: Regex Golf Problems
 ---
 
-This is the landing page for the CWRU Hacker Society Regex Golf Competition - April 16, 2016.
+This is the landing page for the CWRU [Hacker Society](http://hacsoc.org/) Regex Golf Competition - April 16, 2016.
 
-How to submit your answers: Take a screenshot of each of your solutions, including the point value. Add up the total number of points and include this value in your email. Send the screenshots and total points to mrb113@case.edu with the subject line 
+How to submit your answers: Take a screenshot of each of your solutions, including the point value. Add up the total number of points and include this value in your email. 
 
-*[Your name] [number of points]*
+Send the screenshots and total points to *mrb113@case.edu* with the subject line 
+
+*Regex Golf: [Your name] [number of points]*
 
 Submissions close one hour after the competition begins.
 
@@ -25,3 +27,6 @@ REMEMBER, you will win points based on a combination of brevity and correctness.
 
 Must be present at the end to win a prize or a raffle gift. Raffle and winners will be announced at the end of the hour.
 Happy golfing!
+
+
+*Prizes are sponsored by incredible Hacker Society Alumni! If you win one, shoot a “thank you” email to these guys! Aaron Neyer (agn31), John Gunderman (jrg149), David Jannotta (daj40), Fred Hatfull (fxh32), Stephanie Hippo (slh74), Brian Stack (bis12), Hirsch Singhal (hps12), Michelle Bergeron (mrb113), Jason Kuster (jrk126)*
