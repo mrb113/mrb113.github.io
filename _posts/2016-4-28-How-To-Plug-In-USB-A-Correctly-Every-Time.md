@@ -3,13 +3,17 @@ layout: post
 title: How to Successfully Plug in a USB Cable on the First Try (...and why it works)
 ---
 
-When I tell people that I work on USB at my job, a startlingly high number of you say something like "Can you do something about the problem where it takes 3 tries to plug the darn thing in? HAhahahaahahHAAA!!". Yep, you guys sure are hilarious. I also have this problem - I used to resort to wildly jamming the plug around until something clicks (...still my approach for most types of cables, who am I kidding) until I learned the right way to do it. The [Saturday Morning Breakfast Cereal comic](http://www.smbc-comics.com/?id=2388) proposes a quantum physical explanation for this frustrating behavior:
+When I tell people that I work on USB at my job, a startlingly high number of you say something like *"Can you do something about the problem where it takes 3 tries to plug the darn thing in? HAhahahaahahHAAA!!"*. 
+
+Yep, you guys sure are hilarious. I also have this problem - I used to resort to wildly jamming the plug around until something clicks (...still my approach for most types of cables, who am I kidding) until I learned the right way to do it. 
+
+The [Saturday Morning Breakfast Cereal comic](http://www.smbc-comics.com/?id=2388) proposes a quantum physical explanation for this frustrating behavior:
 
 ![SMBC USB](../images/usb-smbc.gif)
 
 Turns out that plugging it in correctly isn't voodoo magic, though - there's actually a way to figure out which way is up or down on a USB Type-A or Type-B (or any of its mini/micro variants) plug:
 
-#### Trick: The USB logo always goes on top.
+### Trick: The USB logo always goes on top.
 
 Look for the USB trident logo, rotate the connector plug so that the logo is facing upwards, and voila. Connected on the first try.
 
