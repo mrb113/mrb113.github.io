@@ -11,7 +11,7 @@ The [Saturday Morning Breakfast Cereal comic](http://www.smbc-comics.com/?id=238
 
 ![SMBC USB](../images/usb-smbc.gif)
 
-Turns out that plugging it in correctly isn't voodoo magic, though - there's actually a way to figure out which way is up or down on a USB Type-A or Type-B (or any of its mini/micro variants) plug:
+Turns out that plugging it in correctly doesn't require advanced knowledge of quantum physics, though - there's actually a way to figure out which way is up or down on a USB Type-A or Type-B (or any of its mini/micro variants) plug:
 
 ### Trick: The USB logo always goes on top.
 
