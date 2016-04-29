@@ -3,11 +3,11 @@ layout: post
 title: How to Successfully Plug in a USB Cable on the First Try (...and why it works)
 ---
 
-When I tell people that I work on USB at my job, a startlingly high number of you say something like "Can you do something about the problem where it takes 3 tries to plug the darn thing in? HAhahahaahahHAAA!!". Yep, you guys sure are hilarious. I also have this problem - I used to resort to wildly jamming the plug around until something clicks(...still my approach for most types of cables, who am I kidding). The Saturday Morning Breakfast Cereal comic proposes a quantum physical explanation for this frustrating behavior:
+When I tell people that I work on USB at my job, a startlingly high number of you say something like "Can you do something about the problem where it takes 3 tries to plug the darn thing in? HAhahahaahahHAAA!!". Yep, you guys sure are hilarious. I also have this problem - I used to resort to wildly jamming the plug around until something clicks (...still my approach for most types of cables, who am I kidding) until I learned the right way to do it. The [Saturday Morning Breakfast Cereal comic](http://www.smbc-comics.com/?id=2388) proposes a quantum physical explanation for this frustrating behavior:
 
 ![SMBC USB](../images/usb-smbc.gif)
 
-Turns out that it isn't voodoo magic, though - there's actually a way to figure out which way is up or down on a USB Type-A or Type-B (or any of its mini/micro variants) plug:
+Turns out that plugging it in correctly isn't voodoo magic, though - there's actually a way to figure out which way is up or down on a USB Type-A or Type-B (or any of its mini/micro variants) plug:
 
 #### Trick: The USB logo always goes on top.
 
@@ -15,9 +15,7 @@ Look for the USB trident logo, rotate the connector plug so that the logo is fac
 
 ![Logo on top](../images/usb-type-a.jpeg)
 
-This doesn't work in cases where your USB receptacle is installed upside down (I've been on planes boasting in-seat charging and realized that the ports were actually upside down. Oops. Back to wildly jamming the plug in.) or if your cable is *gasp* not certified. In order to use that little trident logo, devices and cables need to pass a series of tests provided by the USB Implementers Forum (USB-IF). The USB-IF is the industry standards body made up of many different companies that create USB products. Y
-
----
+This doesn't work in cases where your USB receptacle is installed upside down (I've been on planes boasting in-seat charging and realized that the ports were actually upside down. Oops. Back to wildly jamming the plug in.) or if your cable is *gasp* not certified. In order to use that little trident logo, devices and cables need to pass a series of tests provided by the USB Implementers Forum (USB-IF). The USB-IF is the industry standards body made up of many different companies that create USB products. 
 
 ### Why does this trick work reliably?
 
