@@ -19,11 +19,15 @@ Look for the USB trident logo, rotate the connector plug so that the logo is fac
 
 ![Logo on top](../images/usb-type-a.jpeg)
 
-This doesn't work in cases where your USB receptacle is installed upside down (I've been on planes boasting in-seat charging and realized that the ports were actually upside down. Oops. Back to wildly jamming the plug in.) or if your cable is *gasp* not certified. In order to use that little trident logo, devices and cables need to pass a series of tests provided by the USB Implementers Forum (USB-IF). The USB-IF is the industry standards body made up of many different companies that create USB products. 
+This doesn't work in cases where your USB receptacle is installed upside down (I've been on planes boasting in-seat charging and realized that the ports were actually upside down. Oops. Back to wildly jamming the plug in.) or if your cable is **gasp** not certified. 
+
+In order to use that little trident logo, devices and cables need to pass a series of tests provided by the USB Implementers Forum (USB-IF). The USB-IF is the industry standards body made up of many different companies that create USB products. Once a device is certified, it may use the USB logo.
 
 ### Why does this trick work reliably?
 
-I knew that the "logo always on top" trick worked, but why? Manufacturers rarely all follow the same convention on their own. Have you ever tried using a microwave at someone else's house before? Why can't we agree what the right sequence of keys is to cook food for 30 seconds? Why do some microwaves require extra button presses? Why do some microwaves have alarmingly specific presets?
+I knew that the "logo always on top" trick worked, but why? Manufacturers rarely all follow the same convention on their own. 
+
+Have you ever tried using a microwave at someone else's house before? Why can't we agree what the right sequence of keys is to cook food for 30 seconds? Why do some microwaves require extra button presses? Why do some microwaves have alarmingly specific presets?
 
 ![Microwave from hell](../images/microwave.jpg)
 
@@ -36,7 +40,8 @@ Why would hardware be any different? Why aren't there USB logos in all sorts of 
 
 ### Look at the spec!
 
-Why is the logo on top? Because the USB-IF says so. There are long and detailed specifications (which are open to anyone - you can read them at usb.org/developers) that lay out exactly how USB works.
+Why is the logo on top? Because the USB-IF says so. There are long and detailed specifications (which are open to anyone - you can read them at the [USB-IF website](http://usb.org/developers)) that lay out exactly how USB works.
+
 I went and found the section in the spec that mandates the position of the logo so you don't have to! 
 It's in the USB 2.0 specification in chapter 6. 
 
