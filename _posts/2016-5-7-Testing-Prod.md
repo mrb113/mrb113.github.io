@@ -6,6 +6,6 @@ See my tagline up there? I write drivers and low level system components. Howeve
 
 I might as well own it, so I give you my hilariously cringeworthy commit history.
 
-![Commits](../images/commits.png)
+![Commits](../images/commits.PNG)
 
 Yikes. On the plus side, my RSS feed works correctly now and the links all work as I expect them to!
