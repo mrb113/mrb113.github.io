@@ -3,7 +3,7 @@ layout: post
 title: Priority Inversions on Mars - Inspired by The Martian
 ---
 
-I recently read and extremely enjoyed _The Martian_ by Andy Weir, so I thought a little _The Martian_ themed post is in order. Don’t worry if you haven’t read the book (or seen the movie) – this post doesn’t require any knowledge of the book (you should still read it, though. It's that good.) or even of priority inversions. There are also no spoilers about The Martian beyond what you could get from reading the back cover, so read on.
+I recently read and extremely enjoyed _The Martian_ by Andy Weir, so I thought a little _The Martian_ themed post is in order. Don’t worry if you haven’t read the book (or seen the movie) – this post doesn’t require any knowledge of the book (you should still read it, though. It's that good.) or even of priority inversions. There are also no spoilers about _The Martian_ beyond what you could get from reading the back cover, so read on.
 
 ![The Martian](../images/The_Martian_film_poster.jpg)
 
@@ -39,7 +39,7 @@ In what I consider to be one of the great feats of debugging in our time, engine
 
 ### Diagnosis: Priority inversion
 
-Pathfinder has three threads that run at three different priorities. A thread scheduled at a higher priority interrupts a thread running at a lower priority. Each of the threads shared a single memory area, called the *information bus*. Only one thread can access the information bus at a time– if another thread wants to read from or write to the bus, it has to wait for the resource to become available. This prevents a thread’s information from being overwritten by another thread. (Concurrency-savvy readers: the information bus is protected with mutexes). 
+Pathfinder has three tasks (called "threads" in the context of software) that run at three different priorities. A thread scheduled at a higher priority interrupts a thread running at a lower priority. Each of the threads shared a single memory area, called the *information bus*. Only one thread can access the information bus at a time– if another thread wants to read from or write to the bus, it has to wait for the resource to become available. This prevents a thread’s information from being overwritten by another thread. (Concurrency-savvy readers: the information bus is protected with mutexes). 
 
 Introducing our three thread contestants: 
 
