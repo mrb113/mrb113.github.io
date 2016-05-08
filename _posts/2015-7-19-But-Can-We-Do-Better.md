@@ -249,4 +249,4 @@ I'm not going to do any code for this portion, but think about it: If memory usa
 
 **...but can we do better?**
 
- You tell me! Drop me an email at [michelle@mrbit.me](mailto:michelle@mrbit.me). 
+ You tell me! Drop me an email at [mrbit@outlook.com](mailto:mrbit@outlook.com). 
