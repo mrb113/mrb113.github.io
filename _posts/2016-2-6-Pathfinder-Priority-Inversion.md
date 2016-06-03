@@ -39,7 +39,7 @@ In what I consider to be one of the great feats of debugging in our time, engine
 
 ### Diagnosis: Priority inversion
 
-Pathfinder has three tasks (called "threads" in the context of software) that run at three different priorities. A thread scheduled at a higher priority interrupts a thread running at a lower priority. Each of the threads shared a single memory area, called the *information bus*. Only one thread can access the information bus at a time– if another thread wants to read from or write to the bus, it has to wait for the resource to become available. This prevents a thread’s information from being overwritten by another thread. (Concurrency-savvy readers: the information bus is protected with mutexes). 
+Pathfinder has three tasks (called "threads" in the context of software) that run at three different priorities. A thread scheduled at a higher priority interrupts a thread running at a lower priority. Each of the threads shared a single memory area, called the *information bus*. Only one thread can access the information bus at a time– if another thread wants to read from or write to the bus, it has to wait for the resource to become available. This prevents a thread’s information from being overwritten by another thread. Access to the information bus was managed by the VxWorks operating system present on Pathfinder.
 
 Introducing our three thread contestants: 
 
@@ -63,7 +63,7 @@ NASA has longer statements that you can read about why exactly they didn’t cat
 
 ### How did they fix it?
 
-There are several different ways to fix a priority inversion. The JPL engineers chose *priority inheritance*. That means that any task (in this case, the low priority meteorological task) inherits the priority of a higher priority task that is waiting on a resource (information bus) it is holding. When it releases the resource, it assumes its original priority.
+There are several different ways to fix a priority inversion. One such way is *priority inheritance*. That means that any task (in this case, the low priority meteorological task) inherits the priority of a higher priority task that is waiting on a resource it is holding. To understand the problem, you can think of this resource as the information bus, but it's really a system resource managed by VxWorks to synchronize inter-task communication (concurrency-savvy readers: VxWorks used a mutex for this). When the task releases the resource, it assumes its original priority. The operating system in Pathfinder, VxWorks, had an option to turn on priority inheritance. Once the team realized the issue, the engineers at JPL were able to turn on this option to fix the inversion.
 
 ---
 
@@ -75,11 +75,12 @@ I love this story – a real-life, high-stakes space mission almost bungled by a
 
 ##### Links for further reading
 
-- [Microsoft's informal debriefing about the priority inversion](http://research.microsoft.com/en-us/um/people/mbj/Mars_Pathfinder/Mars_Pathfinder.html)
+- [Authoritative account of the Pathfinder Priority Inversion](http://research.microsoft.com/en-us/um/people/mbj/Mars_Pathfinder/Authoritative_Account.html)
 - [Mars Pathfinder mission page](http://www.nasa.gov/mission_pages/mars-pathfinder/)
 - [Amazon link to The Martian book](http://www.amazon.com/gp/product/B00EMXBDMA/ref=dp-kindle-redirect?ie=UTF8&btkr=1])
 - [Wikipedia: Priority inversion](https://en.wikipedia.org/wiki/Priority_inversion)
 - [Wikipedia: Priority inheritance](https://en.wikipedia.org/wiki/Priority_inheritance)
 
 
-
+##### June 2016 Edit
+[David Cummings](http://www.kellytechnologygroup.com/main/dcummings.htm), one of the engineers on JPL's Pathfinder flight software team, reached out and provided me with the [authoritative account](http://research.microsoft.com/en-us/um/people/mbj/Mars_Pathfinder/Authoritative_Account.html) on the incident. I've updated this post accordingly to give a more accurate picture of what happened.
