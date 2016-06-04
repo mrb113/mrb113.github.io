@@ -82,5 +82,8 @@ I love this story – a real-life, high-stakes space mission almost bungled by a
 - [Wikipedia: Priority inheritance](https://en.wikipedia.org/wiki/Priority_inheritance)
 
 
-##### June 2016 Edit
+##### June 2016 Edit 1
 [David Cummings](http://www.kellytechnologygroup.com/main/dcummings.htm), one of the engineers on JPL's Pathfinder flight software team, reached out and provided me with the [authoritative account](http://research.microsoft.com/en-us/um/people/mbj/Mars_Pathfinder/Authoritative_Account.html) on the incident. I've updated this post accordingly to give a more accurate picture of what happened.
+
+##### June 2016 Edit 2
+I feel obligated to share that [Andy Weir](http://www.andyweirauthor.com/), the author of the novel, also read this post and shared some musings and memories about priority inversions with me. I'm thrilled that some of the people who inspired this post (Andy and the former JPL engineer, David) have both found it and enjoyed it. Since you've made it all the way to the end, I hope you've enjoyed it too. Feel free to share your thoughts in the comments or via [email](mailto:mrbit@outlook.com). 
