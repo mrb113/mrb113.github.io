@@ -4,12 +4,14 @@ title: How to debug Windows bugcheck 0x9F, parameter 3
 ---
 This post is for driver or kernel developers/enthusiasts who have encountered a Blue Screen of Death on Windows where the [bugcheck code is 0x9F](https://msdn.microsoft.com/en-us/library/windows/hardware/ff559329(v=vs.85).aspx), DRIVER_POWER_STATE_FAILURE, and parameter 1 is 0x3. There are a few variants on DRIVER_POWER_STATE_FAILURE, but this one is when a device object has been blocking an IRP for too long a time.
 
-If you're not familiar with IRPs, you should probably back up and learn the basics. Check out [Power IRPs for individual devices](https://msdn.microsoft.com/en-us/library/windows/hardware/ff559804(v=vs.85).aspx). I'm not going to explain them here, but when a device connected to the system is making a power transition, it is responsible for completing that power transition within 2 minutes. So, if your computer is trying to go to sleep and you have a webcam connected to it that should go to sleep along with the system, the driver for that webcam needs to complete the power IRP within two minutes. If it doesn't, a watchdog timer fires and the system bugchecks with code 9F, parameter 3. Two minutes should be ample time for any device to complete a power IRP; if it takes more than that, it usually means there is a deadlock somewhere in the system. Let's give you some tools to 
+If you're not familiar with IRPs, you should probably back up and learn the basics. Check out [Power IRPs for individual devices](https://msdn.microsoft.com/en-us/library/windows/hardware/ff559804(v=vs.85).aspx). I'm not going to explain them here, but when a device connected to the system is making a power transition, it is responsible for completing that power transition within 2 minutes. 
+
+So, if your computer is trying to go to sleep and you have a webcam connected to it that should go to sleep along with the system, the driver for that webcam needs to complete the power IRP within two minutes. If it doesn't, a watchdog timer fires and the system bugchecks with code 9F, parameter 3. Two minutes should be ample time for any device to complete a power IRP; if it takes more than that, it usually means there is a deadlock somewhere in the system. Let's give you some tools to 
 
 ### You will need:
 
 #### 1. A kernel or full dump
-9Fs are different than other crash dumps in that it's not a single faulting line of source code. A wonderful debugging mentor of mine describes solving 9Fs as "untangling a chain of dependencies". You need a full view of the system in order to confidently make a diagnosis here, in most cases. A minidump often won't provide enough information.
+9Fs are different than other crashes in that it's not a single faulting line of source code. A wonderful debugging mentor of mine describes solving 9Fs as "untangling a chain of dependencies". You need a full view of the system in order to confidently make a diagnosis here, in most cases. A minidump often won't provide enough information.
 
 #### 2. WinDBG or KD set up to debug a crash dump
 I know that my readers have a wide range of technical skills - if you don't know how to use at least the basics WinDBG or KD to kernel debug, you may want to start there. See [Getting Started with Windows Debugging](https://msdn.microsoft.com/en-us/library/windows/hardware/mt219729(v=vs.85).aspx).
