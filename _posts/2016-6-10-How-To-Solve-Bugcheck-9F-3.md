@@ -18,7 +18,7 @@ Once you have WinDBG set up and your crash dump opened, be sure you have somewhe
 ![My WinDBG workspace](../images/windbg_workspace.png)
 
 ### Basic steps to solve a 9F 3
-9Fs range from extremely easy problems that you can solve in 2 minutes to extremely difficult that several experienced engineers will scratch their heads at for days. We're going to stick with an easier one. This is the same set of steps that you'd usually use to start out on any 9F 3.
+9Fs range from extremely easy problems that you can solve in 2 minutes to extremely difficult that several experienced engineers will scratch their heads at for days. We're going to stick with an easier one. The steps I describe here are the foundation of solving any 9F 3.
 
 #### 1. Start with .bugcheck to find out the stuck power IRP
 We need to know which power IRP is stuck. This will be in bugcheck parameter 4.
@@ -69,7 +69,7 @@ Irp worker threads (PopIrpThreadList - fffff8035c961100)
   THREAD: ffffe00017948840 (dynamic)
 ```
 
-Look at that! We see our IRP is a Set/D3 IRP and that it's being serviced by that worker thread ffffe0000ae0e740. Write that thread down.
+Look at that! We see our IRP is a Set/D3 IRP and that it's being serviced by that worker thread `ffffe0000ae0e740`. Write that thread down.
 
 If our stuck IRP isn't here, don't despair - see what's going on in IRP worker threads using the techniques below that are running to see if you can get a better picture of what's going on in the system. At this point, you can look at the IRP itself with `!irp` to get some ideas about where it's stuck.
 
