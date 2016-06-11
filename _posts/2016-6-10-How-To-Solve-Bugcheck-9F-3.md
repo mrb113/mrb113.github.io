@@ -2,7 +2,7 @@
 layout: post
 title: How to debug Windows bugcheck 0x9F, parameter 3
 ---
-This post is for driver or kernel developers/enthusiasts who have encountered a Blue Screen of Death on Windows where the [bugcheck code is 0x9F](https://msdn.microsoft.com/en-us/library/windows/hardware/ff559329(v=vs.85).aspx), DRIVER_POWER_STATE_FAILURE, and parameter 1 is 0x3. There are a few variants on DRIVER_POWER_STATE_FAILIURE, but this one is when a device object has been blocking an IRP for too long a time.
+This post is for driver or kernel developers/enthusiasts who have encountered a Blue Screen of Death on Windows where the [bugcheck code is 0x9F](https://msdn.microsoft.com/en-us/library/windows/hardware/ff559329(v=vs.85).aspx), DRIVER_POWER_STATE_FAILURE, and parameter 1 is 0x3. There are a few variants on DRIVER_POWER_STATE_FAILURE, but this one is when a device object has been blocking an IRP for too long a time.
 
 If you're not familiar with IRPs, you should probably back up and learn the basics. Check out [Power IRPs for individual devices](https://msdn.microsoft.com/en-us/library/windows/hardware/ff559804(v=vs.85).aspx). I'm not going to explain them here, but when a device connected to the system is making a power transition, it is responsible for completing that power transition within 2 minutes. So, if your computer is trying to go to sleep and you have a webcam connected to it that should go to sleep along with the system, the driver for that webcam needs to complete the power IRP within two minutes. If it doesn't, a watchdog timer fires and the system bugchecks with code 9F, parameter 3. Two minutes should be ample time for any device to complete a power IRP; if it takes more than that, it usually means there is a deadlock somewhere in the system. Let's give you some tools to 
 
@@ -13,9 +13,9 @@ If you're not familiar with IRPs, you should probably back up and learn the basi
 
 #### 2. WinDBG or KD set up to debug a crash dump
 I know that my readers have a wide range of technical skills - if you don't know how to use at least the basics WinDBG or KD to kernel debug, you may want to start there. See [Getting Started with Windows Debugging](https://msdn.microsoft.com/en-us/library/windows/hardware/mt219729(v=vs.85).aspx).
-Once you have WinDBG set up and your crash dump opened, be sure you have somewhere to take notes. Personally, I'm crazy about WinDBG's Scratch Pad functionality. Here's the WinDBG workspace I use for crash dumps - see how I have my notes right there in the same window. You'll have to figure out whatever works for you if you haven't already, though.
+Once you have WinDBG set up and your crash dump opened, be sure you have somewhere to take notes. Personally, I'm crazy about WinDBG's Scratch Pad functionality. Here's a tiny picture of the WinDBG workspace I use for crash dumps - see how I have my notes right there in the same window on the top left. You'll have to figure out whatever works for you if you haven't already, though.
 
-![My WinDBG workspace](../images/windbg_workspace.png)
+[My WinDBG Workspace](http://i.imgur.com/neYsvgu.png)
 
 ### Basic steps to solve a 9F 3
 9Fs range from extremely easy problems that you can solve in 2 minutes to extremely difficult that several experienced engineers will scratch their heads at for days. We're going to stick with an easier one. This is the same set of steps that you'd usually use to start out on any 9F 3.
