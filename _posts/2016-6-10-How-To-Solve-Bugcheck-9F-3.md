@@ -155,7 +155,7 @@ Debug Data Dirs: Type  Size     VA  Pointer
 If you own the driver that shows up here, you can take some extra steps to see what your driver is doing wrong that's causing it to hold that power IRP for 2 minutes before completing it. If you don't, there's not much you can do to solve it, but you at least know who the culprit is. You can look up the name of the faulting driver online is and report a bug to their engineering team. In this case, a38ccid.sys is a smart card reader driver.
 
 #### 4. Other things to try: !stacks 2
-Once you suspect a driver is at fault, you should see which thread stacks it shows up in. Sometimes (not in this example) you'll see smoking guns. For example, maybe your driver that you identified in step 3 is calling `WdfSpinlockAcquire` in another thread, which may indicate that they have a textbook deadlock somewhere.
+Once you suspect a driver is at fault, you should see which thread stacks it shows up in. Sometimes you'll see smoking guns. For example, maybe your driver that you identified in step 3 is calling `WdfSpinlockAcquire` in another thread, which may indicate that they have a textbook deadlock somewhere.
 
 Try it out on your own dump! Output truncated to the interesting parts.
 
