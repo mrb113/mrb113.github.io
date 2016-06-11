@@ -6,7 +6,7 @@ This post is for driver or kernel developers/enthusiasts who have encountered a 
 
 If you're not familiar with IRPs, you should probably back up and learn the basics. Check out [Power IRPs for individual devices](https://msdn.microsoft.com/en-us/library/windows/hardware/ff559804(v=vs.85).aspx). I'm not going to explain them here, but when a device connected to the system is making a power transition, it is responsible for completing that power transition within 2 minutes. 
 
-So, if your computer is trying to go to sleep and you have a webcam connected to it that should go to sleep along with the system, the driver for that webcam needs to complete the power IRP within two minutes. If it doesn't, a watchdog timer fires and the system bugchecks with code 9F, parameter 3. Two minutes should be ample time for any device to complete a power IRP; if it takes more than that, it usually means there is a deadlock somewhere in the system. Let's give you some tools to 
+So, if your computer is trying to go to sleep and you have a webcam connected to it that should go to sleep along with the system, the driver for that webcam needs to complete the power IRP within two minutes. If it doesn't, a watchdog timer fires and the system bugchecks with code 9F, parameter 3. Two minutes should be ample time for any device to complete a power IRP; if it takes more than that, it usually means there is a deadlock somewhere in the system.
 
 ### You will need:
 
