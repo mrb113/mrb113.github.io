@@ -15,7 +15,7 @@ If you're not familiar with IRPs, you should probably back up and learn the basi
 I know that my readers have a wide range of technical skills - if you don't know how to use at least the basics WinDBG or KD to kernel debug, you may want to start there. See [Getting Started with Windows Debugging](https://msdn.microsoft.com/en-us/library/windows/hardware/mt219729(v=vs.85).aspx).
 Once you have WinDBG set up and your crash dump opened, be sure you have somewhere to take notes. Personally, I'm crazy about WinDBG's Scratch Pad functionality. Here's a tiny picture of the WinDBG workspace I use for crash dumps - see how I have my notes right there in the same window on the top left. You'll have to figure out whatever works for you if you haven't already, though.
 
-[My WinDBG Workspace](http://i.imgur.com/neYsvgu.png)
+![My WinDBG Workspace](http://i.imgur.com/neYsvgu.png)
 
 ### Basic steps to solve a 9F 3
 9Fs range from extremely easy problems that you can solve in 2 minutes to extremely difficult that several experienced engineers will scratch their heads at for days. We're going to stick with an easier one. This is the same set of steps that you'd usually use to start out on any 9F 3.
