@@ -8,7 +8,7 @@ Since the Windows USB Core Team Blog is intended for a different audience than t
 
 ### Posts on the USB Core Team Blog
 
-- [Do I need to write a driver for my USB Type-C hardware?](https://blogs.msdn.microsoft.com/usbcoreblog/2016/06/20/do-i-need-to-write-a-driver-for-my-usb-type-c-hardware/)
+- #### [Do I need to write a driver for my USB Type-C hardware?](https://blogs.msdn.microsoft.com/usbcoreblog/2016/06/20/do-i-need-to-write-a-driver-for-my-usb-type-c-hardware/)
 Once upon a time, in a galaxy far far away... USB device manufacturers were missing clear documentation indicating whether or not they needed to develop a new driver for their USB Type-C product. Jedi Master Michelle wielded the power of the Force to elucidate when you need to write a specific driver for a USB Type-C product.
-- [Setting up an environment to run USB Type-C system HLK tests](https://blogs.msdn.microsoft.com/usbcoreblog/2016/07/06/setting-up-an-environment-to-run-usb-type-c-system-hlk-tests/)
+- #### [Setting up an environment to run USB Type-C system HLK tests](https://blogs.msdn.microsoft.com/usbcoreblog/2016/07/06/setting-up-an-environment-to-run-usb-type-c-system-hlk-tests/)
 A thrilling saga about configuring machines to run USB Type-C tests required to certify your system! Will our brave heroine complete the cable conundrum? Will she successfully set up the software suite? Tune in next week to find out - Same Bat Time, Same Bat Channel.
