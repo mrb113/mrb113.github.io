@@ -2,7 +2,6 @@
 layout: post
 title: Keyboard Shortcuts - Ctrl + Shift + Esc is the new Ctrl + Alt + Del
 ---
-I am going to try out a new series of short & sweet posts in which I share time-saving Windows keyboard shortcuts that I like to use. Sometimes I'll use a keyboard shortcut that I thought was common knowledge, but someone watching will say "How'd you do that?" Today's episode: `Ctrl + Shift + Esc`.
 
 #### Everyone knows Ctrl + Alt + Del, but do you know Ctrl + Shift + Esc?
 
