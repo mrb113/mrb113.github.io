@@ -48,6 +48,6 @@ As far as HacSoc goes, I got a lot more involved and some really great things ha
 
 #### Do I have advice? Maybe.
 
-- Non-beginners(especially in clubs and learning environments): Remember that not everybody has the same skill level as you. Do your best to be accommodating and accepting of extreme beginners. Most beginners don't even know where to start. They probably look up to you, but that doesn't mean you should look down on them.
+- Non-beginners (especially in clubs and learning environments): Remember that not everybody has the same skill level as you. Do your best to be accommodating and accepting of extreme beginners. Most beginners don't even know where to start. They probably look up to you, but that doesn't mean you should look down on them.
 - Presenters/authors: Do not bill something as introductory unless you really mean it. Test it on your cousin who doesn't know anything about the topic and take his feedback into account. It is not a coincidence that I like to write most of my blog posts for a beginner audience.
 - Listeners: Don't get scared if you don't understand something. Ask questions. Read about it yourself. You can always learn, but you have to put in the effort to do so. **You will not become magically good at a thing just by liking the idea of the thing. You have to actually do the thing.**
