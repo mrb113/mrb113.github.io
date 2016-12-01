@@ -4,7 +4,8 @@ title: Bash and Self-Bashing - Lessons from my first day at Hacker Society
 ---
 
 ### Once upon a time...
-Maybe you're screaming right now: "MICHELLE I thought we were going to do badass technology stuff! Nobody asked you for your *#$@*$ life story!". 
+Maybe you're screaming right now: 
+*"MICHELLE I thought we were going to do badass technology stuff! Nobody asked you for your *#$@*$ life story!"*
 Well, I promise we'll do that in my next post, but first I need to tell you a story about the time I first was introduced to command line tools. And subsequently almost ruined my career path. 
 
 During my [college days](https://www.case.edu), I was a pretty active member of [CWRU Hacker Society](hacsoc.org). Basically, it's a club for any students interested in technology - the main club activity is a weekly tech talk. Oh yeah, this is my HacSoc origin story - sadly, it's not as cool as Spiderman's origin story.
@@ -27,19 +28,21 @@ This is how it went in my mind:
 
 This may be disheartening to a lot of my HacSoc readers, but my first experience with the technology club made me feel terrible about my technological abilities. It made such a big impact on me because it set the stage for my entire college computer science career - **I quit going to Hacker Society for 2 years**. Also, it was the beginning of a long relationship with [Impostor Syndrome](https://en.wikipedia.org/wiki/Impostor_syndrome).
 
-#### The story has a happy ending!
+### The story has a happy ending!
 
 After a while, I came around. I slowly realized that I could do things on computers sometimes (though any sort of real passion for them didn't come until... probably my senior year. It may have been late, but boy, am I glad it showed up). Those other people who can talk in great detail about networking for hours - I just care about different things than they do. If you want to write some awesome scripts or hear about memory management, I'm your girl. If your wifi is down... I'm hiding from you.
 
 As far as HacSoc goes, I got a lot more involved and some really great things happened.
 
-Remember how I said I didn't attend for ~2 years? I came back because some guy I'd never heard of was giving a talk on Windows file system filter drivers. That sounded pretty cool to me, so I showed up. It was the most interesting HacSoc talk I'd ever been to - I didn't know at the time that it would work out this way, but that guy is now my boyfriend and we will be celebrating 3 years together on Friday.
+- Remember how I said I didn't attend for ~2 years? I came back because some guy I'd never heard of was giving a talk on Windows file system filter drivers. That sounded pretty cool to me, so I showed up. It was the most interesting HacSoc talk I'd ever been to - I didn't know at the time that it would work out this way, but that guy is now my boyfriend and we will be celebrating 3 years together on Friday.
 
-Today I'm friends with the student that gave the Bash talk from freshman year - I won't name him, since I don't want him to somehow blame himself for the way I reacted (friend, if you figure it out - it's not your fault!).
+- Today I'm friends with the student that gave the Bash talk from freshman year - I won't name him, since I don't want him to somehow blame himself for the way I reacted (friend, if you figure it out - it's not your fault!).
 
-Earlier this year, I actually went back as an alumni and gave my own beginner HacSoc talk about some of the reasons that Windows bluescreens. I really hope I didn't scare anybody.
+- Some of my best friends in the world are from HacSoc (shoutout to Diego, Cameron, Andy, and Aaron).
 
-Oh, yeah, and now I know how to use the command line.
+- Earlier this year, I actually went back as an alumni and gave my own beginner HacSoc talk about some of the reasons that Windows bluescreens. I really hope I didn't scare anybody.
+
+- Oh, yeah, and now I know how to use the command line.
 
 #### Do I have advice? Maybe.
 
