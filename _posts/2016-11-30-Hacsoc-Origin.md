@@ -10,7 +10,7 @@ Maybe you're screaming right now:
 
 Well, I promise we'll do that in my next post, but first I need to tell you a story about the time I first was introduced to command line tools. And subsequently almost ruined my career path. 
 
-During my [college days](https://www.case.edu), I was a pretty active member of [CWRU Hacker Society](https://hacsoc.org). Basically, it's a club for any students interested in technology - the main club activity is a weekly tech talk. Oh yeah, this is my HacSoc origin story - sadly, it's not as cool as Spiderman's origin story.
+During my [college days](https://www.case.edu), I was a pretty active member of [CWRU Hacker Society](http://hacsoc.org). Basically, it's a club for any students interested in technology - the main club activity is a weekly tech talk. Oh yeah, this is my HacSoc origin story - sadly, it's not as cool as Spiderman's origin story.
 
 I was introduced to HacSoc when I was wandering campus my first semester at Case (honestly, I was probably lost) - I was sold as soon as I saw a flyer for the first talk of the year, promising to include introductory topics! At that point, I probably didn't even know what a CPU was, so the prospect of tech talks in a friendly environment was appealing. 
 
