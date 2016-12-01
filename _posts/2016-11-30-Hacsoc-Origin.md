@@ -32,7 +32,7 @@ This may be disheartening to a lot of my HacSoc readers, but my first experience
 
 ### The story has a happy ending!
 
-After a while, I came around. I slowly realized that I could do things on computers sometimes (though any sort of real passion for them didn't come until... probably my senior year. It may have been late, but boy, am I glad it showed up). Those other people who can talk in great detail about networking for hours - I just care about different things than they do. If you want to write some awesome scripts or hear about memory management, I'm your girl. If your wifi is down... I'm hiding from you.
+After a while, I came around. I slowly realized that I could do things on computers sometimes (though any sort of real passion for them didn't come until... probably my senior year. It may have been late, but boy, am I glad it showed up). Those other people who learned to code at age 7 and can talk in great detail about networking for hours - I just care about different things than they do. If you want to write some awesome scripts or hear about memory management, I'm your girl. If your wifi is down... I'm hiding from you.
 
 As far as HacSoc goes, I got a lot more involved and some really great things happened.
 
