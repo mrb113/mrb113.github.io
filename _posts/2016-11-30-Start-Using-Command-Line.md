@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bash and Self-Bashing: Lessons from my first day at Hacker Society
+title: Bash and Self-Bashing - Lessons from my first day at Hacker Society
 ---
 
 ### Once upon a time...
