@@ -5,7 +5,9 @@ title: Bash and Self-Bashing - Lessons from my first day at Hacker Society
 
 ### Once upon a time...
 Maybe you're screaming right now: 
+
 *"MICHELLE I thought we were going to do badass technology stuff! Nobody asked you for your *#$@*$ life story!"*
+
 Well, I promise we'll do that in my next post, but first I need to tell you a story about the time I first was introduced to command line tools. And subsequently almost ruined my career path. 
 
 During my [college days](https://www.case.edu), I was a pretty active member of [CWRU Hacker Society](hacsoc.org). Basically, it's a club for any students interested in technology - the main club activity is a weekly tech talk. Oh yeah, this is my HacSoc origin story - sadly, it's not as cool as Spiderman's origin story.
