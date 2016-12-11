@@ -7,9 +7,10 @@ You already know that I'm a fan of the [Easter Eggs](http://mrbit.me/WinDBG-East
 
 `!ndiskd.miniports` will spit out some [info about the miniports present on the system](https://msdn.microsoft.com/en-us/library/windows/hardware/ff564148(v=vs.85).aspx).
 
-Sometimes, the miniport's name will be in some crazy color. Sometimes the system will have miniports with multiple colors. It's sort of like Fiji water bottles - it's pretty, but nobody's entirely sure what the point of it is.
+Sometimes the miniport's name will be in some crazy color. Sometimes the system will have miniports with multiple colors. It's sort of like Fiji water bottles - it's pretty, but nobody's entirely sure what the point of it is.
+Of course, this is only if you're a WinDbg user! KD users will not see colors. However, since you're using KD, I get the idea that you probably like it that way.
 
-(as far as I know `!ndiskd.netadapter` and `!ndiskd.miniports` are functionally the same. Don't quote me on that, though - !ndiskd is desparately in need of a documentation update. Do you know? Drop me a line.)
+*as far as I know `!ndiskd.netadapter` and `!ndiskd.miniports` are functionally the same. Don't quote me on that, though - !ndiskd is desparately in need of a documentation update. Do you know? Drop me a line.*
 
 ![ndiskd.netadapter](../images/ndiskd_blue.png)
 
