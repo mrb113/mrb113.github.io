@@ -15,9 +15,9 @@ What?? I thought we were on Windows 10... This is obviously very frustrating to 
 
 # How can I tell if my Windows code will run correctly on the user's current environment?
 
-I don't know for sure what Origin is doing wrong to make this message show up, but I can speculate that they took several wrong turns that landed them in this mess. Just like that time my mom landed us at a KFC in the bad part of Cleveland in the middle of the night... but that's another story.
+I don't know for sure what Origin is doing wrong to make this message show up, but I can speculate that they took several wrong turns that landed them in this mess. Just like that time my mom landed us at a KFC in a bad part of Cleveland in the middle of the night... but that's another story.
 
-Here's what they should have done instead. 
+Here's what they should have done instead (not you, mom - you can just use a GPS). 
 
 ## Check for the feature you need instead of checking the version
 Think long and hard about the problem you're trying to solve - do you want to know if the user's PC has a certain functionality? Or do you actually care which OS version it's running? There are cases for both, but if you just want to know if your function is there, you can check for that. Microsoft has a [great guide here on how to do that](https://msdn.microsoft.com/en-us/library/windows/desktop/ms724832(v=vs.85).aspx).
