@@ -55,13 +55,10 @@ Imagine that you are in charge of checking if your program will run on a given u
 Your program runs on Windows 7 and up, aka, version 6.1 and up. You decide to try the following check
 
  ```
- if (Version.major == 6 && Version.minor >= 1)
- {
+ if (Version.major == 6 && Version.minor >= 1) {
 	LaunchProgram();
 	// Or whatever.
- }
- else
- {
+ } else {
      ShowMessage("Codeinator 20000 requires Windows 7 or higher.");
  }
  ```
