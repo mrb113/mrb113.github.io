@@ -56,19 +56,14 @@ Your program runs on Windows 7 and up, aka, version 6.1 and up. You decide to tr
 
 ```
 	if (Version.major == 6 && Version.minor >= 1)
-	{
-		
+	{		
 		LaunchProgram();
-
 		// Or whatever.
-
 	}
 
 	else
 	{
-
 	     ShowMessage("Codeinator 20000 requires Windows 7 or higher.");
-
 	}
  ```
 
