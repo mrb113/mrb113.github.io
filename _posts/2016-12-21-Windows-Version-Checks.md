@@ -37,7 +37,8 @@ First, let's get some background. What, you thought I'd just tell you the answer
 I'm going to let you in on a secret: Windows 7, 8, etc. are names made up by the marketing folks. If you thought that Windows 7 would be 7.0, you are WRONG. We engineers have our own numbers that we have for Windows, detailed in the table below.
 
 #### If you're skimming, this table is the important part
-If you thought the jump from Windows 8 to Windows 10 was crazy, just wait until you see what happened to the Windows version! We skipped straight from 6 to 10. 
+If you thought the jump from Windows 8 to Windows 10 was crazy, just wait until you see what happened to the Windows version! We skipped straight from 6 to 10.
+
 *Why was 6 afraid of 7? Because 7 ate (8) 9. Hahaha. What a great joke... when I was six years old. Anyway.*
 
 This table was up to date at the time of writing - Microsoft pays people to keep their docs updated, though, so you can find the most up-to-date one [here](https://msdn.microsoft.com/en-us/library/windows/desktop/ms724832(v=vs.85).aspx).
@@ -45,14 +46,13 @@ This table was up to date at the time of writing - Microsoft pays people to keep
 ### Recent Windows Versions
 ![version table](../images/windows_versions.PNG)
 
-
 ## Laziness begets bugginess
 Windows Vista was finished in 2006. Windows 10 came out in 2015. In between that is nine years of the major version being "6". To some developers, it must have felt like the major version would be "6" forever and they planned accordingly. This certainly manifested in some Very Bad Shortcuts.
 
 ## Poor Man's Version Check
 Imagine that you are in charge of checking if your program will run on a given user's PC. Rather than following all of the great advice up there or taking the time to Google the right way to do it, you decide you have a fantastic idea.
 
-Your program runs on Windows 7 and up, aka, version 6.1 and up. You decide to try the following check
+Your program runs on Windows 7 and up, aka, version 6.1 and up. You decide to try the following check:
 
 ```
 
