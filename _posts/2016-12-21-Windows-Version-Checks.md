@@ -16,6 +16,7 @@ What?? I thought we were on Windows 10... This is obviously very frustrating to 
 # How can I tell if my Windows code will run correctly on the user's current environment?
 
 I don't know for sure what Origin is doing wrong to make this message show up, but I can speculate that they took several wrong turns that landed them in this mess. Just like that time my mom landed us at a KFC in the bad part of Cleveland in the middle of the night... but that's another story.
+
 Here's what they should have done instead. 
 
 ## Check for the feature you need instead of checking the version
