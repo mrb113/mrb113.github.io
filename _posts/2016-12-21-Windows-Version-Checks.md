@@ -21,9 +21,9 @@ I don't know for sure what Origin is doing wrong to make this message show up, b
 Think long and hard about the problem you're trying to solve - do you want to know if the user's PC has a certain functionality? Or do you actually care which OS version it's running? There are cases for both, but if you just want to know if your function is there, you can check for that. Microsoft has a [great guide here on how to do that](https://msdn.microsoft.com/en-us/library/windows/desktop/ms724832(v=vs.85).aspx).
 
 ## If you really need to do an OS check, use the Version Helper functions
-There is this fabulous function that they can use called [IsWindows7OrGreater()](https://msdn.microsoft.com/en-us/library/windows/desktop/dn424972(v=vs.85).aspx). It does exactly what you think. There are a whole suite of these Version Helper functions for every Windows OS version - you can have an OS version checking bonanza with these babies!
+There is this fabulous function that you can use called [IsWindows7OrGreater()](https://msdn.microsoft.com/en-us/library/windows/desktop/dn424972(v=vs.85).aspx). It does exactly what you think. There are a whole suite of these Version Helper functions for every Windows OS version - you can have an OS version checking bonanza with these babies!
 
-## If all else fails, do it yourself. Carefully.
+## If all else fails, do it yourself. Carefully. No shortcuts.
 There are scenarios where you might need to do your own version check because you can't use the built in Version Helper functions. For example, maybe you're checking for the version of some other program rather than Windows. Doing your own version check requires careful consideration and no shortcuts. Read on...
 
 # Hypothesis: Where Origin went wrong
