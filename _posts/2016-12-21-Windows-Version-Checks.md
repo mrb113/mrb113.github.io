@@ -64,7 +64,6 @@ Your program runs on Windows 7 and up, aka, version 6.1 and up. You decide to tr
  {
      ShowMessage("Codeinator 20000 requires Windows 7 or higher.");
  }
- 
 ```
 
 This is Very Broken the second that Microsoft revs `Version.major` to something other than "6", which is EXACTLY WHAT THEY DID for Windows 10. 
