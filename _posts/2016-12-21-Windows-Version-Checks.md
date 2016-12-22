@@ -34,7 +34,7 @@ Disclaimer: This is my own hypothesis, but it's pretty feasible. If Origin didn'
 First, let's get some background. What, you thought I'd just tell you the answer?
 
 ## Windows Versions
-I'm going to let you in on a secret: Windows 7, 8, etc. are names made up by the marketing folks. If you thought that Windows 7 would be 7.0, you are WRONG. We engineers have our own numbers that we have for Windows, detailed in the table below.
+I'm going to let you in on a secret: Windows 7, 8, etc. are names made up by the marketing folks. If you thought that Windows 7 would be Version 7.0, you are WRONG. We engineers have our own numbers that we have for Windows, detailed in the table below.
 
 #### If you're skimming, this table is the important part
 If you thought the jump from Windows 8 to Windows 10 was crazy, just wait until you see what happened to the Windows version! We skipped straight from 6 to 10.
