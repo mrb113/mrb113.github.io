@@ -49,7 +49,7 @@ This table was up to date at the time of writing - Microsoft pays people to keep
 ![version table](../images/windows_versions.PNG)
 
 ## Laziness begets bugginess
-Windows Vista was finished in 2006. Windows 10 came out in 2015. In between that is nine years of the major version being "6". To some developers, it must have felt like the major version would be "6" forever and they planned accordingly. This certainly manifested in some Very Bad Shortcuts.
+Windows Vista was finished in 2006. Windows 10 came out in 2015. In between that are nine years of the major version being "6". To some developers, it must have felt like the major version would be "6" forever and they planned accordingly. This certainly manifested in some Very Bad Shortcuts.
 
 ## Poor Man's Version Check
 Imagine that you are in charge of checking if your program will run on a given user's PC. Rather than following all of the great advice up there or taking the time to Google the right way to do it, you decide you have a fantastic idea.
