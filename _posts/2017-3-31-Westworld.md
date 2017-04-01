@@ -5,7 +5,8 @@ title: Observations on the future of computing (if the "Westworld" TV series is 
 
 I've had a lot of free time the past week and a half because I had hip surgery last Wednesday. During my time on the couch, I watched the entirety of HBO's highly-addictive sci-fi/Western series, [Westworld](http://www.hbo.com/westworld). Here are some silly observations about the future of tech if the future is the one imagined in the show.
 
-The show takes place sometime in the future - the premise as described by Wikipedia: "The story takes place in the fictional Westworld, a technologically advanced Wild West–themed amusement park populated by android hosts. Westworld caters to high-paying guests, who may indulge in whatever they wish within the park, without fear of retaliation from the hosts."
+The show is set sometime in the future - the premise as described by Wikipedia: 
+> "The story takes place in the fictional Westworld, a technologically advanced Wild West–themed amusement park populated by android hosts. Westworld caters to high-paying guests, who may indulge in whatever they wish within the park, without fear of retaliation from the hosts."
 
 ### Computing power
 
