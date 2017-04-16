@@ -331,6 +331,15 @@
 					background: #007bb6;
 				}
 
+			.icon.circle.fa-etsy {
+			background: #eb6d20;
+			color: white;
+			}
+
+				.icon.circle.fa-etsy:hover {
+					background: #eb6d20;
+				}
+
 			.icon.circle.fa-wordpress {
 				background: #7490c3;
 				color: white;
