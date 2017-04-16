@@ -358,16 +358,6 @@
 					background: #e1b89b;
 				}
 
-			.icon.circle.fa-clone {
-			background: #eb6d20;
-			color: white;
-			}
-
-				.icon.circle.fa-clone:hover {
-					background: #eb6d20;
-				}
-
-
 		.icon.featured {
 			cursor: default;
 			display: block;
