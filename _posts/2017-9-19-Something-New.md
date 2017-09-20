@@ -18,9 +18,10 @@ At some point in the bottom of my well of unhappiness, I knew there was one good
 
 *I quit my job.*
 
-Well, sort of. My new job, which I began in June 2017 is not too different from my old job - I still work in USB (but also sensors now!), but instead of being a dev, I now have a Quality role. In my case, that means that I get to do more with tools and things like that, which was always the best part of my old job but now I get to focus on it!
-So far, I'm very happy and absolutely love it. I keep waiting for the honeymoon phase to wear off, but I'm not there yet.
-That's a very glaze-over-the-details version; the reality was that the transition was not as smooth as I'm making it sound. A nonzero number of people tried talking me out of it and, at the time, I really questioned if it was the right choice. Hindsight being 20/20, my only regret is not doing it months sooner.
+Well, sort of. My new job, which I began in June 2017, is not too different from my old job - I still work in USB (but also sensors now!), but instead of being a dev, I now have a Quality role. In my case, that means that I get to do more with tools and things like that, which was always the best part of my old job but now I get to focus on it! Secondly, I love the space (hardware! protocols! kernel mode! etc!), so I didn't have to say goodbye to my favorite things (or people). 
+So far, I'm very happy with the new job and absolutely love it. I keep waiting for the honeymoon phase to wear off, but I'm not there yet.
+
+That's a very glaze-over-the-details version; the reality is that the transition was not as smooth as I'm making it sound. A nonzero number of people tried talking me out of it and, at the time, I really questioned if it was the right choice. Hindsight being 20/20, my only regret is not doing it months sooner.
 
 ### Step 2
 Let's back up - before starting my new job, I decided to take some time away from work since it was the big monster in my life making me so depressed. I took 2.5 weeks and went to Central Asia (Kyrgyzstan, Tajikistan, and Uzbekistan). This was a GREAT life choice - getting out there and exploring made me feel human again. Even when things weren't going well (food poisoning, eating yucky horsemeat, etc.), it was amazing to have a *different* set of problems in my life than the ones I'd been living with already!
