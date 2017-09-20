@@ -30,8 +30,8 @@ Let's back up - before starting my new job, I decided to take some time away fro
 ### Step 3
 The last big change was something I'd dreamed of literally since I was a little girl. In first (or second?) grade, my parents asked "what instrument do you want to play?". I knew the answer immediately - violin!
 
-However... my ever-so-charming father decided that he didn't want to listening to "cat screeching noises" the first few months while we were getting the hang of it. Despite the illusion of choice, I was informed that I had been signed up for piano lessons instead.
-Fast forward to May 2017 - I remembered my violin dream and did some research about if it's possible to learn violin as an adult. The answer: of course it is. We even have advantages in some ways - we can focus better than kids! So, I bought a violin on Amazon and signed up for weekly lessons. I've got a long way to go, but I've made a lot of progress from "Twinkle Twinkle" - I've completed my beginner book and I'm even playing some simple pieces by Bach now! I'm taking weekly progress videos which is going to be a lot of fun to watch later on.
+However... my ever-so-charming father decided that he didn't want to be listening to "cat screeching noises" the first few months while we were getting the hang of it. Despite the illusion of choice, I was informed that I had been signed up for piano lessons instead.
+Fast forward to May 2017 - I remembered my violin dream and did some research about if it's possible to learn violin as an adult. The answer: of course it is. We even have advantages in some ways - we can focus better than kids! So, I bought a violin on Amazon and signed up for weekly lessons. I've got a long way to go, but I've made a lot of progress from "Twinkle Twinkle" - I've completed my beginner book and I'm even playing some simple pieces by Bach now! I'm taking weekly progress videos which are going to be a lot of fun to watch later on.
 
 I am one bazillion times happier and more productive now than I was 6 months ago. The message I want to share is that if there is something within your control in your life that you want to change, do it.
 
