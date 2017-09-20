@@ -37,7 +37,7 @@ After a while, I came around. I slowly realized that I could do things on comput
 As far as HacSoc goes, I got a lot more involved and some really great things happened.
 
 - Remember how I said I didn't attend for ~2 years? I came back because some guy I'd never heard of was giving a talk on Windows file system filter drivers. That sounded pretty cool to me, so I showed up. It was the most interesting HacSoc talk I'd ever been to - I didn't know at the time that it would work out this way, but that guy is now my boyfriend and we will be celebrating 3 years together on Friday.
-** Update: As of February 2017, we're engaged!! I get to marry that dude! **
+**Update: As of February 2017, we're engaged!! I get to marry that dude!**
 
 - Today I'm friends with the student that gave the Bash talk from freshman year - I won't name him, since I don't want him to somehow blame himself for the way I reacted (friend, if you figure it out - it's not your fault!).
 
