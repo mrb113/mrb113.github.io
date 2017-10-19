@@ -3,12 +3,14 @@ layout: post
 title: Stop Eating Error Codes! Avoiding a Basic Software Anti-Pattern
 ---
 
-# Anti-patterns
+## Anti-patterns
 Loosely defined as "a commonly used, yet counterproductive solution to a problem".
 
 If something gives you the "heebie jeebies", as I call it whenever I see weird-looking code, it's probably an anti-pattern. Recognizing anti-patterns in code is a valuable skill to have as both a programmer and a code reviewer.
 
-# Anti-pattern: Eating error codes
+Here's a simple one for you to master:
+
+## Anti-pattern: Eating error codes
 I've seen this anti-pattern show up all the time (heck, I've probably done it before). Here's a quick demonstration using Windows/C programming constructs, but this is present in every scenario in any language where you can get a failure code back from a function.
 
 ```
