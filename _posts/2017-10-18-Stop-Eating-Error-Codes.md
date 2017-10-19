@@ -22,7 +22,7 @@ HRESULT WriteResultsToFile()
 	// OpenResultsFile() returns S_OK on success, may return a variety of failure error codes.
 	// For example, E_INVALID_PARAMETER if FilePath does not exist.
 	HRESULT hr = OpenResultsFile(&FilePath);
-    // Check to see if the function completed successfully
+	// Check to see if the function completed successfully
     if(FAILED(hr))
     {
     	Trace("OpenResultsFile failed!");
@@ -59,6 +59,7 @@ HRESULT WriteResultsToFile()
     }
 
     // etc
+    ...
 Exit:
 	return hr;
 }
