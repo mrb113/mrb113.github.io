@@ -17,17 +17,17 @@ I've seen this anti-pattern show up all the time (heck, I've probably done it be
 // 
 HRESULT WriteResultsToFile()
 {
-	...
+    ...
 
-	// OpenResultsFile() returns S_OK on success, may return a variety of failure error codes.
-	// For example, E_INVALID_PARAMETER if FilePath does not exist.
-	HRESULT hr = OpenResultsFile(&FilePath);
-	
-	// Check to see if the function completed successfully
+    // OpenResultsFile() returns S_OK on success, may return a variety of failure error codes.
+    // For example, E_INVALID_PARAMETER if FilePath does not exist.
+    HRESULT hr = OpenResultsFile(&FilePath);
+
+    // Check to see if the function completed successfully
     if(FAILED(hr))
     {
-    	Trace("OpenResultsFile failed!");
-    	return E_FAIL;
+        Trace("OpenResultsFile failed!");
+        return E_FAIL;
     }
 
     // etc
@@ -46,24 +46,24 @@ Don't eat the error!
 // 
 HRESULT WriteResultsToFile()
 {
-	...
+    ...
 
-	// OpenResultsFile() returns S_OK on success, may return a variety of failure error codes.
-	// For example, E_INVALID_PARAMETER if FilePath does not exist.
-	HRESULT hr = OpenResultsFile(&FilePath);
+    // OpenResultsFile() returns S_OK on success, may return a variety of failure error codes.
+    // For example, E_INVALID_PARAMETER if FilePath does not exist.
+    HRESULT hr = OpenResultsFile(&FilePath);
 
     // Check to see if the function completed successfully
     if(FAILED(hr))
     {
-    	Trace("OpenResultsFile failed! HRESULT: %!HRESULT!", hr);
-    	// Keep the existing value of hr
-    	goto Exit;
+        Trace("OpenResultsFile failed! HRESULT: %!HRESULT!", hr);
+        // Keep the existing value of hr
+        goto Exit;
     }
 
     // etc
     ...
 Exit:
-	return hr;
+    return hr;
 }
 ```
 
