@@ -45,7 +45,7 @@ Based on the above, you're telling the compiler you want what's at address 0 to 
 # What is NULL, anyway?
 The C language definition states that for each pointer type, there is a special value (the null pointer) which is distinguishable from all other pointer values and which is "guaranteed to compare unequal to a pointer to any object or function."
 
-Surprise! 'NULL' isn't really zero. It's just a construct to denote somewhere that's not really in memory. However, it needs to be denoted in code somehow, so we just pick `0` to denote our "out of bounds" `NULL` value. If you want to build a compiler that interprets "michelle b is super cool" as `NULL` (guaranteed to compare unequal to any object or function), you could make it happen, though I might wonder if you're doing okay.
+Surprise! `NULL` isn't really zero. It's just a construct to denote somewhere that's not really in memory. However, it needs to be denoted in code somehow, so we just pick `0` to denote our "out of bounds" `NULL` value. If you want to build a compiler that interprets "michelle b is super cool" as `NULL` (guaranteed to compare unequal to any object or function), you could make it happen, though I might wonder if you're doing okay.
 
 C++ makes this slightly less confusing by removing the macro business and introducing the `nullptr` keyword to indicate this concept.
 
