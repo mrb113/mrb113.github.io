@@ -3,6 +3,11 @@ layout: post
 title: Regex Golf Problems
 ---
 
+## Update
+The links for the specialized problems no longer work, but you can still try your hand at regex golf at [Regex Golf.](https://alf.nu/RegexGolf)
+
+## Original page content
+
 This is the landing page for the CWRU [Hacker Society](http://hacsoc.org/) Regex Golf Competition - April 16, 2016.
 
 How to submit your answers: Take a screenshot of each of your solutions, including the point value. Add up the total number of points and include this value in your email. 
