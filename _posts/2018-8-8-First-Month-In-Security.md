@@ -16,7 +16,7 @@ Here are 17 things I've learned in the past month on the job as a pen tester.
 4. Hacking is only part of the job - a large portion of it is communicating results to the people you want to fix your bugs.
 5. Engineers secretly don't like it when you want them to fix security bugs, even if they know it's the right thing to do (can confirm, was previously engineer told to fix security bugs).
 6. All software is terrible (every software engineer already knows this, so this was just a reaffirmation)
-7. A LOT of acronyms. CSRF! XSRF! MSRC!
+7. A LOT of acronyms. CSRF! APT! ATP! MSRC!
 8. How to find and exploit some classes of vulnerabilities. Muahaha. 
 9. It's okay to not have a security background to be a pen tester! Having a regular software engineering background plus the ability to learn fast has been my saving grace in the new job.
 10. People will almost always present their systems in a way that makes it look 100% secure (because they've removed any vulnerabilities they've already thought of). You need to try to figure out what they didn't tell you about - that's where the vulnerabilities probably are.
