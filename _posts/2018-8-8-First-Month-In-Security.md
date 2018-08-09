@@ -10,7 +10,7 @@ A lot of people are curious about what it's like to be a penetration tester (whi
 Here are 17 things I've learned in the past month on the job as a pen tester.
 
 0. I am painfully, acutely aware that my website doesn't use HTTPS. I've been stuck waiting to get the cert for the past several months... I should revisit that.
-1. I can't really tell you what I do all day at work :/
+1. At least right now, I can't really disclose what I do all day at work :/
 2. The room we sit in is well-lit and there aren't as many black hoodies as stock photos would have you believe.
 3. There is, however, some evil laughter when vulnerabilities are discovered.
 4. Hacking is only part of the job - a large portion of it is communicating results to the people you want to fix your bugs.
